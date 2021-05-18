@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Екатерина Суслова](https://up.htmlacademy.ru/htmlcss/31/user/96162).
-* Наставник: [Анна Волкова] (https://htmlacademy.ru/profile/id477715).
+* Наставник: [Анна Волкова](https://htmlacademy.ru/profile/id477715).
 
 ---
 
