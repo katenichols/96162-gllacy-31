@@ -56,7 +56,7 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <div>
             <fieldset>
-              <legend for="sorting">Сортировка:</legend>
+              <legend>Сортировка:</legend>
               <select name="sorting">
                 <option value="по популярности" selected>По популярности</option>
                 <option value="сначала недорогие">Сначала недорогие</option>
@@ -79,19 +79,19 @@
               <legend>Жирность:</legend>
                 <ul>
                   <li>
-                    <input class="visually-hidden" type="radio" name="min-fat-content">
+                    <input class="visually-hidden" type="radio" name="min-fat-content" id="min-fat-content">
                     <label for="min-fat-content">0%</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="radio" name="first-fat-content" checked>
+                    <input class="visually-hidden" type="radio" name="first-fat-content" id="first-fat-content" checked>
                     <label for="first-fat-content">до 10%</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="radio" name="second-fat-content">
+                    <input class="visually-hidden" type="radio" name="second-fat-content" id="second-fat-content">
                     <label for="second-fat-content">до 30%</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="radio" name="max-fat-content">
+                    <input class="visually-hidden" type="radio" name="max-fat-content" id="max-fat-content">
                     <label for="max-fat-content">выше 30%</label>
                   </li>
                 </ul>
@@ -131,6 +131,7 @@
       </section>
 
       <section>
+        <h2 class="visually-hidden">Товары</h2>
         <ul>
           <li>
             <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
