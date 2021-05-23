@@ -79,19 +79,19 @@
               <legend>Жирность:</legend>
                 <ul>
                   <li>
-                    <input class="visually-hidden" type="radio" name="min-fat-content" id="min-fat-content">
+                    <input class="visually-hidden" type="radio" name="fat-content" value="min-fat-content" id="min-fat-content">
                     <label for="min-fat-content">0%</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="radio" name="first-fat-content" id="first-fat-content" checked>
+                    <input class="visually-hidden" type="radio" name="fat-content" value="first-fat-content" id="first-fat-content" checked>
                     <label for="first-fat-content">до 10%</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="radio" name="second-fat-content" id="second-fat-content">
+                    <input class="visually-hidden" type="radio" name="fat-content" value="second-fat-content" id="second-fat-content">
                     <label for="second-fat-content">до 30%</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="radio" name="max-fat-content" id="max-fat-content">
+                    <input class="visually-hidden" type="radio" name="fat-content" value="max-fat-content" id="max-fat-content">
                     <label for="max-fat-content">выше 30%</label>
                   </li>
                 </ul>
@@ -103,23 +103,23 @@
               <legend>Наполнители:</legend>
                 <ul>
                   <li>
-                    <input class="visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
+                    <input class="visually-hidden" type="checkbox" name="toppings" value="chocolate" id="chocolate" checked>
                     <label for="chocolate">Шоколадные</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="checkbox" name="sprinkles" id="sprinkles" checked>
+                    <input class="visually-hidden" type="checkbox" name="toppings" value="sprinkles" id="sprinkles" checked>
                     <label for="sprinkles">Сахарные присыпки</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="checkbox" name="fruits" id="fruits">
+                    <input class="visually-hidden" type="checkbox" name="toppings" value="fruits" id="fruits">
                     <label for="fruits">Фрукты</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="checkbox" name="syrups" id="syrups">
+                    <input class="visually-hidden" type="checkbox" name="toppings" value="syrups" id="syrups">
                     <label for="syrups">Сиропы</label>
                   </li>
                   <li>
-                    <input class="visually-hidden" type="checkbox" name="jams" id="jams">
+                    <input class="visually-hidden" type="checkbox" name="toppings" value="jams" id="jams">
                     <label for="jams">Джемы</label>
                   </li>
                 </ul>
@@ -128,10 +128,7 @@
             <button type="submit">Применить</button>
           </div>
         </form>
-      </section>
 
-      <section>
-        <h2 class="visually-hidden">Товары</h2>
         <ul>
           <li>
             <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
@@ -309,39 +306,25 @@
       <h2>Корзина</h2>
         <table>
           <caption>Товары в корзине</caption>
-          <tr class="visually-hidden">
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
           <tr>
             <td>
-              <button type="button">x</button>
+              <button class="visually-hidden" type="button">Удалить товар</button>
             </td>
-            <td>
-              <span>Пломбир с апельсиновым джемом</span>
-            </td>
+            <td>Пломбир с апельсиновым джемом</td>
             <td>
               <span>1,5</span> кг x <span>200 руб.</span>
             </td>
-            <td>
-              <span>300 руб.</span>
-            </td>
+            <td>300 руб.</td>
           </tr>
           <tr>
             <td>
-              <button type="button">x</button>
+              <button class="visually-hidden" type="button">Удалить товар</button>
             </td>
-            <td>
-              <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-            </td>
+            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
             <td>
               <span>1,5</span> кг x <span>300 руб.</span>
             </td>
-            <td>
-              <span>450 руб.</span>
-            </td>
+            <td>450 руб.</td>
           </tr>
         </table>
         <div>
