@@ -14,7 +14,8 @@
 --nav-active-color: #EDEDED;
 --catalog-nav-hover-color: #FBDED7;
 --catalog-nav-active-color: #F6B5A5;
---stroke-dark-color: #B2B2B2;
+--stroke-light-color: #B2B2B2;
+--stroke-dark-color: rgb(43, 43, 43, 0.52);
 --unique-color: #2E88E4;
 --shadow-color: #696969;
 --special-white-color: #FEFEFE;
@@ -25,9 +26,30 @@
 --button-link-hover-color: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
 --button-link-active-color: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);;
 --button-link-shadow-color: rgba(172, 16, 0, 0.64);
---button-link-shadow-hover-color: 0px 2px 2px #AC1000;
+--button-link-shadow-hover-color: #AC1000;
 --botton-link-shadow-active-color: #942718;
 --text-shadow-color: rgba(160, 32, 11, 0.76);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("fonts/roboto.woff2") format("woff2"), url("fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), url("fonts/robotomedium.woff2") format("woff2"), url("fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), url("fonts/robotobold.woff2") format("woff2"), url("fonts/robotobold.woff") format("woff");
 }
 
 /* Global */
@@ -123,6 +145,7 @@
 }
 
 .nav-item__link {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-weight: bold;
   color: var(--basic-white-color);
 }
@@ -146,6 +169,7 @@
 }
 
 .nav-item-current {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -168,6 +192,7 @@
 }
 
 .catalog-nav__item-link-special {
+  font-family: "Roboto Bold", Arial, sans-serif;
   line-height: 18px;
   font-weight: bold;
   color: var(--basic-dark-color);
@@ -175,6 +200,7 @@
 
 .main-header__link,
 .main-header__text {
+  font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -182,10 +208,12 @@
 }
 
 .main-header__text {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-weight: bold;
 }
 
 .main-header__link-phone {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
@@ -194,12 +222,14 @@
 /* Advertisement */
 
 .advertisement-title {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
 }
 
 .button-link {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -212,7 +242,7 @@
 
 .button-link:hover {
   background: var(--button-link-hover-color);
-  box-shadow: var(--button-link-shadow-hover-color);
+  box-shadow: 0px 2px 2px var(--button-link-shadow-hover-color);
 }
 
 .button-link:active {
@@ -228,25 +258,27 @@
 /* Banners */
 
 .banners-item__title {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
 }
 
 .banners-item__text {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
 }
 
 .banners-item-left {
-  background-image: url(img/banner-background1.jpg);
+  background-image: url("img/banner-background1.jpg");
   background-repeat: no-repeat;
   background-color: var(--banner-background1-color);
 }
 
 .banners-item-right {
-  background-image: url(img/banner-background2.jpg);
+  background-image: url("img/banner-background2.jpg");
   background-repeat: no-repeat;
   background-color: var(--banner-background2-color);
 }
@@ -254,6 +286,7 @@
 /* Hits */
 
 .price-group__item {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 30px;
   line-height: 35px;
   font-weight: bold;
@@ -270,18 +303,24 @@
 }
 
 .goods-item__text {
+  font-family: "Roboto Medium", Arial, sans-serif;
   font-weight: 500;
+}
+
+.goods-item__image {
+  background-color: var(--popup-color);
 }
 
 /* Features */
 
 .features {
-  background-image: url(img/waffle-pattern.jpg);
+  background-image: url("img/waffle-pattern.jpg");
   background-repeat: repeat;
   background-color: var(--waffle-background-color);
 }
 
 .features-title {
+  font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -295,18 +334,20 @@
 /* News */
 
 .news {
-  background-image: url(img/news-background.jpg);
+  background-image: url("img/news-background.jpg");
   background-repeat: no-repeat;
   background-color: var(--basic-white-color);
 }
 
 .news-title {
+  font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: var(--basic-dark-color);
 }
 
 .news-link {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -320,7 +361,7 @@
 /* Subscription */
 
 .subscription {
-  background-image: url(img/subscription-background.jpg);
+  background-image: url("img/subscription-background.jpg");
   background-repeat: no-repeat;
   color: var(--popup-color);
 }
@@ -335,7 +376,7 @@
 
 .subscription-form__input {
   background-color: var(--basic-white-color);
-  border-color: rgb(43, 43, 43, 0.52);
+  border-color: var(--stroke-dark-color);
 }
 
 /* Contacts */
@@ -350,6 +391,7 @@
 
 .contacts-info__address,
 .contacts-info__link-phone {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -385,7 +427,13 @@
 }
 
 .footer-list__link-current {
+  font-family: "Roboto Bold", Arial, sans-serif;
   font-weight: bold;
+}
+
+.footer-list__link:hover,
+.footer-list__link:active {
+  color: var(--light-link-action-color);
 }
 
 .devs-text {
@@ -397,8 +445,33 @@
   color: var(--basic-white-color);
 }
 
-/* signin */
+.devs-special-text:hover,
+.devs-special-text:active {
+  color: var(--light-link-action-color);
+}
+
+/* Sign in */
+
+.signin-form__link {
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--basic-dark-color);
+}
+
+.signin-form__link:hover,
+.signin-form__link:active {
+  color: var(--dark-link-action-color);
+}
 
 .signin-form__button {
   line-height: 16px;
+}
+
+/* Feadback */
+.feadback-title {
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--basic-dark-color);
 }
