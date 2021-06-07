@@ -136,6 +136,7 @@
 .cart-link,
 .devs-special-text,
 .catalog-item__link {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -325,7 +326,7 @@
 }
 
 .button-link {
-  display: block;
+  /* display: inline-block; */
   text-align: center;
 
   font-family: "Roboto Bold", Arial, sans-serif;
