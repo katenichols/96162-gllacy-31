@@ -166,17 +166,22 @@
 
 .main-header-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 26px;
 }
 
 .main-header__main-nav-wrapper {
   grid-column: span 3;
+  display: flex;
 }
 
 .main-nav {
   font-size: 16px;
   line-height: 18px;
+}
+
+.main-nav__list {
+  display: flex;
 }
 
 .nav-item__link {
@@ -294,19 +299,19 @@
 
 .advertisement-wrapper {
   position: relative;
-  display: grid;
-  grid-template-rows: min-content min-content min-content;
-  margin-top: -123px;
-  margin-bottom: 41px;
+  display: flex;
+  padding-bottom: 41px;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .advertisement-title {
   position: relative;
   display: inline-block;
   width: 672px;
-  justify-self: center;
   text-align: center;
-  padding-top: 398px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 60px;
@@ -315,7 +320,7 @@
 }
 
 .advertisement-list {
-  display: inline-block;
+  display: flex;
   margin: 0;
 }
 
@@ -345,17 +350,23 @@
 }
 
 .advertisement-link {
-  justify-self: center;
-  width: 261px;
   font-size: 32px;
   line-height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 9px;
+  padding-right: 23px;
+  padding-bottom: 9px;
+  padding-left: 23px;
+
+  border-radius: 70px;
 }
 
 /* Banners */
 
 .banner-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 26px;
   margin-bottom: 40px;
 }
@@ -390,7 +401,7 @@
 
 .hits-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 26px;
   margin-bottom: 40px;
 }
@@ -440,7 +451,7 @@
 
 .features-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 26px;
   row-gap: 19px;
   margin-bottom: 40px;
@@ -462,7 +473,7 @@
 
 .news-subscription-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 26px;
   margin-bottom: 40px;
 }
@@ -517,14 +528,24 @@
 
 .contacts {
   width: 100%;
-  height: auto;
+  height: 430px;
+  padding-top: 62px;
+
   background-image: url("img/map-pin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.contacts-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .contacts-info {
+  display: flex;
+  flex-direction: column;
   width: 303px;
+  /* justify-self: end; */
 
   font-size: 14px;
   line-height: 20px;

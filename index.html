@@ -22,7 +22,7 @@
                 <a class="nav-item__link" href="catalog.html" target="_blank">Каталог</a>
                 <section>
                   <h2 class="visually-hidden">Меню каталога</h2>
-                  <ul class="nav-item__list catalog-nav">
+                  <ul class="nav-item__list catalog-nav visually-hidden">
                     <li class="catalog-nav__item">
                       <a class="catalog-nav__item-link catalog-nav__item-link-special" href="#">Новинки</a>
                     </li>
@@ -65,29 +65,29 @@
 
     <main>
       <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
-        <section class="advertisement">
-          <div class="container">
-            <div class="advertisement-wrapper">
-              <h2 class="visually-hidden">Самое вкусное предложение!</h2>
-              <span class="advertisement-title">Крем-брюле и пломбир с малиновым джемом</span>
-              <ul class="advertisement-list">
-                <li class="advertisement-list__item">
-                  <label class="advertisement-list__item-label" for="slider1"></label>
-                  <input class="advertisement-list__item-input" type="radio" name="slider" id="slider1" checked>
-                </li>
-                <li>
-                  <label class="advertisement-list__item-label" for="slider2"></label>
-                  <input class="advertisement-list__item-input" type="radio" name="slider" id="slider2">
-                </li>
-                <li>
-                  <label class="advertisement-list__item-label" for="slider3"></label>
-                  <input class="advertisement-list__item-input" type="radio" name="slider" id="slider3">
-                </li>
-              </ul>
-              <a class="advertisement-link button-link" href="#">Давайте оба!</a>
-            </div>
+      <section class="advertisement">
+        <div class="container">
+          <div class="advertisement-wrapper">
+            <h2 class="visually-hidden">Самое вкусное предложение!</h2>
+            <span class="advertisement-title">Крем-брюле и пломбир с малиновым джемом</span>
+            <ul class="advertisement-list">
+              <li class="advertisement-list__item">
+                <label class="advertisement-list__item-label" for="slider1"></label>
+                <input class="advertisement-list__item-input" type="radio" name="slider" id="slider1" checked>
+              </li>
+              <li>
+                <label class="advertisement-list__item-label" for="slider2"></label>
+                <input class="advertisement-list__item-input" type="radio" name="slider" id="slider2">
+              </li>
+              <li>
+                <label class="advertisement-list__item-label" for="slider3"></label>
+                <input class="advertisement-list__item-input" type="radio" name="slider" id="slider3">
+              </li>
+            </ul>
+            <a class="advertisement-link button-link" href="#">Давайте оба!</a>
           </div>
-        </section>
+        </div>
+      </section>
 
       <section class="banners">
         <div class="container">
@@ -147,8 +147,8 @@
         </div>
       </section>
 
-      <section class="features">
-        <div class="container">
+      <div class="container">
+        <section class="features">
           <h2 class="visually-hidden">Премущества</h2>
           <p class="features-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
           <ul class="features-list">
@@ -165,10 +165,8 @@
               <span class="features-list__item-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</span>
             </li>
           </ul>
-        </div>
-      </section>
+        </section>
 
-      <div class="container">
         <div class="news-subscription-wrapper">
           <section class="news">
             <h2 class="news-title">Новое в нашем блоге</h2>
@@ -191,14 +189,16 @@
 
       <section class="contacts">
         <div class="container">
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts-info">
-            <span class="contacts-info__text">Адрес главного офиса и офлайн-магазина:</span>
-            <address class="contacts-info__address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-            <span class="contacts-info__text">Для заказов по телефону:</span>
-            <a class="contacts-info__link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-            <span class="contacts-info__text">(с 10 до 20 ежедневно)</span>
-            <a class="contacts-info__link-submit button-link" href="#">Форма обратной связи</a>
+          <div class="contacts-wrapper">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="contacts-info">
+              <span class="contacts-info__text">Адрес главного офиса и офлайн-магазина:</span>
+              <address class="contacts-info__address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+              <span class="contacts-info__text">Для заказов по телефону:</span>
+              <a class="contacts-info__link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+              <span class="contacts-info__text">(с 10 до 20 ежедневно)</span>
+              <a class="contacts-info__link-submit button-link" href="#">Форма обратной связи</a>
+            </div>
           </div>
         </div>
         <!-- <img class="contacts-image" src="img/map-pin.jpg" width="1200" height="430" alt=""> -->
@@ -278,7 +278,7 @@
       </div>
     </footer>
 
-    <section class="signin">
+    <section class="signin visually-hidden">
       <h2 class="visually-hidden">Форма входа</h2>
       <form class="signin-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -295,7 +295,7 @@
       </form>
     </section>
 
-    <section class="search">
+    <section class="search visually-hidden">
       <h2 class="visually-hidden">Форма поиска</h2>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="searching"></label>
@@ -303,7 +303,7 @@
       </form>
     </section>
 
-    <section class="feadback">
+    <section class="feadback visually-hidden">
       <form class="feadback-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="feadback-form__title">Мы обязательно вам ответим!</h2>
         <p>
