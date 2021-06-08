@@ -13,7 +13,7 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="container main-header__container">
+      <div class="container main-header-container">
         <div class="main-header__main-nav-wrapper">
           <a class="main-header__logo-link" href="index.html" target="_blank">
             <img class="main-header__logo" src="img/icons/logo.svg" width="154" height="64" alt="Магазин мороженого Глэйси">
@@ -24,7 +24,7 @@
                 <a class="nav-item__link nav-item__link-current">Каталог</a>
                 <section>
                   <h2 class="visually-hidden">Меню каталога</h2>
-                  <ul class="nav-item__list catalog-nav">
+                  <ul class="nav-item__list catalog-nav visually-hidden">
                     <li class="catalog-nav__item">
                       <a class="catalog-nav__item-link catalog-nav__item-link-special" href="#">Новинки</a>
                     </li>
@@ -62,23 +62,23 @@
           <span class="main-header__text">с 10 до 20, ежедневно</span>
           <a class="main-header__link main-header__link-phone" href="tel:+78124502525">8 812 450-25-25</a>
         </div>
+
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-list__item">
+            <a class="breadcrumbs-list__item-link" href="index.html" target="_blank">Главная</a>
+          </li>
+          <li class="breadcrumbs-list__item">
+            <a class="breadcrumbs-list__item-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs-list__item">
+            Сливочное
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
       <div class="container">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-list">
-            <a class="breadcrumbs-list__link" href="index.html" target="_blank">Главная</a>
-          </li>
-          <li class="breadcrumbs-list">
-            <a class="breadcrumbs-list__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="breadcrumbs-list">
-            Сливочное
-          </li>
-        </ul>
-
         <h1 class="main-title">Сливочное мороженое</h1>
 
         <section class="filters">
@@ -167,7 +167,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
@@ -176,7 +176,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-кофейное с кусочками шоколада</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
@@ -185,7 +185,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-клубничное с присыпкой из белого шоколада</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good4.jpg" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
@@ -194,7 +194,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное крем-брюле с карамельной подливкой</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good5.jpg" width="267" height="267" alt="Сливочное мороженое с брусничным джемом">
@@ -203,7 +203,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с брусничным джемом</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good6.jpg" width="267" height="267" alt="Сливочно-черничное мороженое с цельными ягодами черники">
@@ -212,7 +212,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-черничное с цельными ягодами черники</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good7.jpg" width="267" height="267" alt="Сливочно-лимонное мороженое с карамельной присыпкой">
@@ -221,7 +221,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-лимонное с карамельной присыпкой</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good8.jpg" width="267" height="267" alt="Сливочное мороженое с шоколадной стружкой">
@@ -230,7 +230,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с шоколадной стружкой</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good9.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое с кусочками шоколада">
@@ -239,7 +239,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-ванильное с кусочками шоколада</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good10.jpg" width="267" height="267" alt="Сливочноe мороженое с ментоловым сиропом">
@@ -248,7 +248,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочноe с ментоловым сиропом</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good11.jpg" width="267" height="267" alt="Сливочное мороженое с кусочками черного шоколада">
@@ -257,7 +257,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с кусочками черного шоколада</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
               <img class="catalog-item__image" src="img/image-good12.jpg" width="267" height="267" alt="Сливочное мороженое с мятным сиропом">
@@ -266,7 +266,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с мятным сиропом</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link visually-hidden" href="#">Быстрый просмотр</a>
             </li>
           </ul>
           <ul class="pagination-list">
@@ -292,76 +292,78 @@
 
     <footer class="main-footer">
       <div class="container">
-        <section class="social-links">
-          <h2 class="visually-hidden">Наши социальные сети</h2>
-          <ul class="social-links__list">
-            <li class="social-links__list-item social-list">
-              <a class="social-list__link" href="#" target="_blank">
-                <svg class="social-list__link-svg" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-width="2"/>
-                  <path d="M18 2a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H19v3.45h3v3.44h-3V27h-3v-8.66h-3V14.9h3v-3.45A3.25 3.25 0 0119 8h3v3.45h.06z" fill="#fff"/>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links__list-item social-list">
-              <a class="social-list__link" href="#" target="_blank">
-                <svg class="social-list__link-svg" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-width="2"/>
-                  <path d="M18.64 16.49c.33 0 .65-.06.95-.18.27-.1.5-.3.64-.56a2 2 0 00.15-.8c0-.24-.07-.48-.18-.7a1.05 1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05 1.08-.06 1.48-.08zM20.12 19.08c-.37-.07-.74-.1-1.12-.08h-2.39v3.5h2.45c.42 0 .83-.09 1.21-.25.32-.11.6-.33.77-.62.15-.28.22-.59.22-.9.02-.35-.08-.7-.26-1a1.6 1.6 0 00-.88-.65z" fill="#fff"/>
-                  <path d="M18 2a16 16 0 100 32 16 16 0 000-32zm6.6 20.53a3.7 3.7 0 01-1.12 1.33c-.55.41-1.17.71-1.83.88-.82.2-1.67.29-2.51.27H13V11h5.45c.83-.01 1.66.02 2.48.11.54.08 1.07.25 1.56.5.5.24.91.62 1.19 1.09.27.47.4 1 .39 1.55.01.64-.18 1.27-.54 1.8-.38.54-.92.95-1.53 1.2v.07a4 4 0 012.18 1.13c.55.62.84 1.43.8 2.26.02.63-.1 1.25-.38 1.82z" fill="#fff"/>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links__list-item social-list">
-              <a class="social-list__link" href="#" target="_blank">
-                <svg class="social-list__link-svg" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-width="2"/>
-                  <g fill="#fff">
-                    <path d="M22.92 18a4.96 4.96 0 11-9.78-1.14h-.9v6.84h11.4v-6.84h-.9c.1.37.16.75.18 1.14z"/>
-                    <path d="M18 20.66a2.66 2.66 0 10-.04-5.32 2.66 2.66 0 00.04 5.32zM23.68 12.3h-3.04v3.04h3.04V12.3z"/>
-                    <path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0 01-2.32 2.3h-11.4A2.29 2.29 0 0110 23.7V12.3a2.29 2.29 0 012.28-2.3h11.39A2.3 2.3 0 0126 12.3v11.4z"/>
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links__list-item social-list">
-              <a class="social-list__link" href="#" target="_blank">
-                <svg class="social-list__link-svg" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-width="2"/>
-                  <path d="M18 2a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25 6.52-3.46 10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32 7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85.41.16.86.2 1.3.12C11 19 9.53 18.3 9.61 16.17c.42.32.93.48 1.46.46-.77-.23-2.15-3.24-1-4.78 2 1.79 4.07 3.48 7.8 3.64.23-2.21 1.24-3.7 3.17-4.32A3.61 3.61 0 0125 12.31c.74-.23 1.45-.47 2.19-.69a2.21 2.21 0 01-.93 1.71 1.77 1.77 0 001.42-.47 2.9 2.9 0 01-1.74 1.95z" fill="#fff"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="footer-nav">
-          <h2 class="visually-hidden">Меню</h2>
-            <ul class="footer-nav__list">
-              <li class="footer-nav__list-item footer-list">
-                <a class="footer-list__link footer-list__link-current" href="#">Для поставщиков</a>
+        <div class="footer-wrapper">
+          <section class="social-links">
+            <h2 class="visually-hidden">Наши социальные сети</h2>
+            <ul class="social-links__list">
+              <li class="social-links__list-item social-list">
+                <a class="social-list__link" href="#" target="_blank">
+                  <svg class="social-list__link-svg" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-width="2"/>
+                    <path d="M18 2a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H19v3.45h3v3.44h-3V27h-3v-8.66h-3V14.9h3v-3.45A3.25 3.25 0 0119 8h3v3.45h.06z" fill="#fff"/>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-nav__list-item footer-list">
-                <a class="footer-list__link" href="#">О производстве</a>
+              <li class="social-links__list-item social-list">
+                <a class="social-list__link" href="#" target="_blank">
+                  <svg class="social-list__link-svg" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-width="2"/>
+                    <path d="M18.64 16.49c.33 0 .65-.06.95-.18.27-.1.5-.3.64-.56a2 2 0 00.15-.8c0-.24-.07-.48-.18-.7a1.05 1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05 1.08-.06 1.48-.08zM20.12 19.08c-.37-.07-.74-.1-1.12-.08h-2.39v3.5h2.45c.42 0 .83-.09 1.21-.25.32-.11.6-.33.77-.62.15-.28.22-.59.22-.9.02-.35-.08-.7-.26-1a1.6 1.6 0 00-.88-.65z" fill="#fff"/>
+                    <path d="M18 2a16 16 0 100 32 16 16 0 000-32zm6.6 20.53a3.7 3.7 0 01-1.12 1.33c-.55.41-1.17.71-1.83.88-.82.2-1.67.29-2.51.27H13V11h5.45c.83-.01 1.66.02 2.48.11.54.08 1.07.25 1.56.5.5.24.91.62 1.19 1.09.27.47.4 1 .39 1.55.01.64-.18 1.27-.54 1.8-.38.54-.92.95-1.53 1.2v.07a4 4 0 012.18 1.13c.55.62.84 1.43.8 2.26.02.63-.1 1.25-.38 1.82z" fill="#fff"/>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-nav__list-item footer-list">
-                <a class="footer-list__link" href="#">Наши документы</a>
+              <li class="social-links__list-item social-list">
+                <a class="social-list__link" href="#" target="_blank">
+                  <svg class="social-list__link-svg" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-width="2"/>
+                    <g fill="#fff">
+                      <path d="M22.92 18a4.96 4.96 0 11-9.78-1.14h-.9v6.84h11.4v-6.84h-.9c.1.37.16.75.18 1.14z"/>
+                      <path d="M18 20.66a2.66 2.66 0 10-.04-5.32 2.66 2.66 0 00.04 5.32zM23.68 12.3h-3.04v3.04h3.04V12.3z"/>
+                      <path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0 01-2.32 2.3h-11.4A2.29 2.29 0 0110 23.7V12.3a2.29 2.29 0 012.28-2.3h11.39A2.3 2.3 0 0126 12.3v11.4z"/>
+                    </g>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-nav__list-item footer-list">
-                <a class="footer-list__link" href="#">Экологические стандарты</a>
+              <li class="social-links__list-item social-list">
+                <a class="social-list__link" href="#" target="_blank">
+                  <svg class="social-list__link-svg" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 35a17 17 0 100-34 17 17 0 000 34z" stroke="#fff" stroke-width="2"/>
+                    <path d="M18 2a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25 6.52-3.46 10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32 7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85.41.16.86.2 1.3.12C11 19 9.53 18.3 9.61 16.17c.42.32.93.48 1.46.46-.77-.23-2.15-3.24-1-4.78 2 1.79 4.07 3.48 7.8 3.64.23-2.21 1.24-3.7 3.17-4.32A3.61 3.61 0 0125 12.31c.74-.23 1.45-.47 2.19-.69a2.21 2.21 0 01-.93 1.71 1.77 1.77 0 001.42-.47 2.9 2.9 0 01-1.74 1.95z" fill="#fff"/>
+                  </svg>
+                </a>
               </li>
             </ul>
-        </section>
+          </section>
 
-        <section class="devs">
-          <h2 class="visually-hidden">Разработчики</h2>
-          <a class="devs-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img class="devs-link__image" src="img/icons/logo-academy.svg" width="108" height="31" alt=""></a>
-          <p class="devs-text">Сделано в <a class="devs-special-text" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2021</p>
-        </section>
+          <section class="footer-nav">
+            <h2 class="visually-hidden">Меню</h2>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list-item footer-list">
+                  <a class="footer-list__link footer-list__link-current" href="#">Для поставщиков</a>
+                </li>
+                <li class="footer-nav__list-item footer-list">
+                  <a class="footer-list__link" href="#">О производстве</a>
+                </li>
+                <li class="footer-nav__list-item footer-list">
+                  <a class="footer-list__link" href="#">Наши документы</a>
+                </li>
+                <li class="footer-nav__list-item footer-list">
+                  <a class="footer-list__link" href="#">Экологические стандарты</a>
+                </li>
+              </ul>
+          </section>
+
+          <section class="devs">
+            <h2 class="visually-hidden">Разработчики</h2>
+            <a class="devs-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img class="devs-link__image" src="img/icons/logo-academy.svg" width="108" height="31" alt=""></a>
+            <p class="devs-text">Сделано в <a class="devs-special-text" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2021</p>
+          </section>
+        </div>
       </div>
     </footer>
 
-    <section class="cart">
+    <section class="cart visually-hidden">
       <h2 class="visually-hidden">Корзина</h2>
         <table class="cart-table">
           <caption class="visually-hidden">Товары в корзине</caption>

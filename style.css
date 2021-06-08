@@ -107,7 +107,7 @@
 .features-list,
 .social-links__list,
 .footer-nav__list,
-.breadcrumbs,
+.breadcrumbs-list,
 .filters-form__list,
 .catalog-list,
 .pagination-list {
@@ -130,7 +130,7 @@
 .devs-link,
 .signin-form__link,
 .nav-list-item__link,
-.breadcrumbs-list__link,
+.breadcrumbs-list__item-link,
 .goods-item__link,
 .pagination-list__item-link,
 .cart-link,
@@ -273,6 +273,7 @@
 
 .main-header__info-wrapper {
   grid-column: span 4;
+  justify-self: end;
 }
 
 .main-header__text {
@@ -584,6 +585,10 @@
   justify-self: center;
 }
 
+.social-links__list {
+  display: flex;
+}
+
 .social-list__link-svg {
   fill-opacity: 0.8;
   stroke-opacity: 0.5;
@@ -700,8 +705,14 @@
 
 /* Breadcrumbs */
 
-.breadcrumbs-list,
-.breadcrumbs-list__link {
+.breadcrumbs-list {
+  display: flex;
+  grid-column: span 3;
+  margin: 0;
+}
+
+.breadcrumbs-list__item,
+.breadcrumbs-list__item-link {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -711,6 +722,9 @@
 /* Catalog main */
 
 .main-title {
+  margin-top: 0;
+  margin-bottom: 29px;
+
   font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 35px;
   line-height: 41px;
@@ -720,7 +734,19 @@
 
 /* Filters */
 
+.filters-form__wrapper {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.filters-form__wrapper:last-child {
+  margin-bottom: 40px;
+}
+
 .filters-form__fieldset {
+  display: flex;
+  padding: 0;
+
   border: none;
 }
 
@@ -755,6 +781,11 @@
   line-height: 16px;
   font-weight: 400;
   color: var(--basic-dark-color);
+}
+
+.filters-form__list {
+  display: flex;
+  margin: 0;
 }
 
 .price-slider {
@@ -827,13 +858,45 @@
   box-shadow: inset 0 2px 1px var(--shadow-color);
 }
 
+/* Catalog */
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 26px;
+  row-gap: 40px;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.catalog-item__text {
+  display: inline-block;
+}
+
 /* Pagination */
+
+.pagination-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 48px;
+  margin-left: auto;
+}
+
+.pagination-list__item {
+  margin-right: 4px;
+}
+
+.pagination-list__item:last-child {
+  margin-right: 0;
+}
 
 .pagination-list__item-link {
   display: block;
   width: 26px;
   height: 26px;
   text-align: center;
+  padding-top: 4px;
 
   font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 16px;
