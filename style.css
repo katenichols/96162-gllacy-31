@@ -177,13 +177,13 @@
 /* Header */
 
 .main-header-container {
-  /* position: absolute; */
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr) min-content;
   column-gap: 26px;
   width: 1146px;
   margin-top: 9px;
-  z-index: 7;
+  z-index: 1;
 }
 
 .main-header__main-nav-wrapper {
@@ -369,17 +369,20 @@
 
 /* Main */
 
-/* .main-background {
+.main-background {
+  position: absolute;
+  display: block;
+  top: -124px;
   width: 1446px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
+  min-height: 900px;
+  text-align: center;
+  z-index: -1;
 
   background-image: url("img/main-image1.png");
   background-repeat: no-repeat;
   background-size: 83% auto;
-  background-position-x: center;
-} */
+  background-position-x: -11%;
+}
 
 /* Advertisement */
 
@@ -390,6 +393,7 @@
   flex-direction: column;
   justify-content: end;
   padding-top: 274px;
+  z-index: 1;
 }
 
 .advertisement-title {
@@ -400,6 +404,7 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  z-index: 3;
 
   font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 60px;
@@ -409,11 +414,12 @@
 
 .advertisement-list {
   position: absolute;
-  top: 563px;
+  top: 439px;
   display: flex;
   width: 21px;
   height: 21px;
   margin: 0;
+  z-index: 3;
 }
 
 .advertisement-list__item-label {
@@ -422,12 +428,14 @@
   width: 21px;
   height: 21px;
   margin-right: 8px;
+  z-index: 3;
 
   background-image: url("img/icons/icon-radio-off.svg");
 }
 
 .button-link {
   text-align: center;
+  z-index: 3;
 
   font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 18px;
