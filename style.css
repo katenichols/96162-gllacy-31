@@ -852,6 +852,27 @@
   border-radius: 6px;
 }
 
+.subscription-form__input:hover {
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+
+  border-width: 2px;
+}
+
+.subscription-form__input:focus {
+  font-weight: bold;
+  color: var(--basic-dark-color);
+
+  border-color: var(--unique-color);
+}
+
+.subscription-form__input:focus:placeholder-shown {
+  font-weight: normal;
+  color: var(--placeholder-color);
+}
+
 .subscription-form__button {
   padding-top: 11px;
   padding-right: 19px;
