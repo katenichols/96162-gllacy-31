@@ -14,8 +14,8 @@
 --stroke-color: #B2B2B2;
 --stroke-dark-color: rgb(43, 43, 43, 0.52);
 --nav-active-color: #EDEDED;
---catalog-nav-hover-color: #FBDED7;
---catalog-nav-active-color: #F6B5A5;
+--site-nav-hover-color: #FBDED7;
+--site-nav-active-color: #F6B5A5;
 --unique-color: #2E88E4;
 --shadow-color: #696969;
 --special-white-color: #FEFEFE;
@@ -104,7 +104,7 @@
 }
 
 .main-nav__list,
-.nav-item__list,
+.site-nav__list,
 .advertisement-list,
 .hits-list,
 .features-list,
@@ -120,7 +120,7 @@
 }
 
 .nav-item__link,
-.catalog-nav__item-link,
+.site-nav__list-item-link,
 .main-header__link,
 .main-header__logo-link,
 .advertisement-link,
@@ -137,8 +137,7 @@
 .goods-item__link,
 .pagination-list__item-link,
 .cart-link,
-.devs-special-text,
-.catalog-item__link {
+.devs-special-text {
   text-decoration: none;
 }
 
@@ -262,29 +261,50 @@
   font-weight: bold;
 }
 
-.catalog-nav {
-  background-color: var(--basic-white-color);
+.site-nav {
+  position: relative;
 }
 
-.catalog-nav__item-current {
+.site-nav__list {
+  display: none;
+}
+
+.main-nav__list-item.nav-item:hover .site-nav__list {
+  position: absolute;
+  top: 5px;
+  left: -21px;
+
+  display: block;
+  min-width: 143px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  padding-left: 21px;
+
+  background-color: var(--basic-white-color);
+  border-radius: 4px;
+  box-shadow: 0 20px 20px var(--popup-shadow-color);
+}
+
+.site-nav__list-item-current {
   background-color: var(--nav-current-color);
 }
 
-.catalog-nav__item:hover {
-  background-color: var(--catalog-nav-hover-color);
+.site-nav__list-item:hover {
+  background-color: var(--site-nav-hover-color);
 }
 
-.catalog-nav__item:active {
-  background-color: var(--catalog-nav-active-color);
+.site-nav__list-item:active {
+  background-color: var(--site-nav-active-color);
 }
 
-.catalog-nav__item-link {
+.site-nav__list-item-link {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-dark-color);
 }
 
-.catalog-nav__item-link-special {
+.site-nav__list-item-link-special {
   font-family: "Roboto Bold", Arial, sans-serif;
   line-height: 18px;
   font-weight: bold;
