@@ -482,8 +482,8 @@
 }
 
 .advertisement-link {
-  /* margin-right: auto;
-  margin-left: 434px; */
+  margin-right: auto;
+  margin-left: 434px;
   padding-top: 9px;
   padding-right: 23px;
   padding-bottom: 9px;
@@ -654,7 +654,6 @@
 
 .goods-item__text,
 .catalog-item__text{
-  display: block;
   width: 100%;
   text-align: center;
 
@@ -667,16 +666,17 @@
   background-color: var(--popup-color);
 }
 
-.catalog-item__link {
+.goods-item__link {
   display: none;
 }
 
-.goods-item:hover:before + .catalog-item__link {
+.hits-list__item.goods-item:hover .goods-item__link.button-link {
+  position: absolute;
+  top: 337px;
+  left: 33px;
+
   display: block;
   width: auto;
-  margin-top: 11px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 10px;
   padding-right: 16px;
   padding-bottom: 10px;
