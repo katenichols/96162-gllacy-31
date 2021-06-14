@@ -444,6 +444,7 @@
   position: relative;
 
   display: flex;
+  height: 523px;
   padding-bottom: 40px;
   flex-direction: column;
   justify-content: flex-end;
