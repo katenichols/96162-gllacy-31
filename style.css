@@ -136,6 +136,7 @@
 .nav-list-item__link,
 .breadcrumbs-list__item-link,
 .goods-item__link,
+.catalog-item__link,
 .pagination-list__item-link,
 .cart-link,
 .devs-special-text {
@@ -216,7 +217,7 @@
   display: block;
   width: 154px;
   height: 64px;
-  margin-right: 24px;
+  margin-right: 10px;
 }
 
 .main-nav {
@@ -355,6 +356,8 @@
 }
 
 .main-header__link {
+  position: relative;
+
   margin-left: 10px;
   padding-top: 9px;
   padding-right: 16px;
@@ -381,16 +384,64 @@
 }
 
 .main-header__link-search::before {
-  content: url("img/icons/icon-search.svg");
+  content: "";
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  background-image: url("img/icons/icon-search.svg");
+  background-repeat: no-repeat;
 }
 
-.main-header__link-search:hover {
+.main-header__link-search:hover:before {
   content: url("img/icons/icon-search-hover.svg");
-  background-color: var(--basic-white-color);
 }
 
 .main-header__link-login {
   padding-left: 44px;
+}
+
+.main-header__link-login::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+
+  width: 20px;
+  height: 19px;
+
+  background-image: url("img/icons/icon-signin.svg");
+  background-repeat: no-repeat;
+}
+
+.main-header__link-login:hover:after {
+  background-image: url("img/icons/icon-signin-hover.svg");
+}
+
+.main-header__link-empty::after,
+.main-header__link-full::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+
+  width: 21px;
+  height: 19px;
+
+  background-repeat: no-repeat;
+}
+
+.main-header__link-empty::after {
+  background-image: url("img/icons/icon-cart-empty.svg");
+}
+
+.main-header__link-empty:hover:after {
+  background-image: url("img/icons/icon-cart-empty_hover.svg");
+}
+
+.main-header__link-full::after {
+  background-image: url("img/icons/icon-cart-full.svg");
 }
 
 .main-header__link-full {
@@ -515,6 +566,11 @@
 }
 
 .button-link {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   font-family: "Roboto Bold", Arial, sans-serif;
@@ -569,17 +625,18 @@
   padding-bottom: 22px;
   padding-left: 16px;
 
+  background-size: cover;
   border-radius: 16px;
 }
 
 .banners-item-left {
-  background-image: url("img/banner-background1.jpg");
+  background-image: url("img/banner-background1.png");
   background-repeat: no-repeat;
   background-color: var(--banner-background1-color);
 }
 
 .banners-item-right {
-  background-image: url("img/banner-background2.jpg");
+  background-image: url("img/banner-background2.png");
   background-repeat: no-repeat;
   background-color: var(--banner-background2-color);
 }
@@ -608,7 +665,6 @@
 .banners-item__link {
   margin-right: 0;
   margin-left: auto;
-
   padding-top: 13px;
   padding-right: 22px;
   padding-bottom: 11px;
@@ -668,7 +724,7 @@
   z-index: -1;
 
   width: 293px;
-  min-height: 402px;
+  height: calc(100% + 80px);
   padding-top: 6px;
   padding-right: 13px;
   padding-bottom: 0;
@@ -737,7 +793,7 @@
 .hits-list__item.goods-item:hover .goods-item__link.button-link,
 .catalog-list__item.catalog-item:hover .catalog-item__link.button-link {
   position: absolute;
-  top: 337px;
+  bottom: -59px;
   left: 33px;
   z-index: 500;
 
