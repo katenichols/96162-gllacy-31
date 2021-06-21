@@ -1625,6 +1625,24 @@
   border-bottom: none;
 }
 
+.breadcrumbs-list__item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -17px;
+
+  width: 8px;
+  height: 8px;
+
+  background-image: url("img/icons/breadcrumbs-separator.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.breadcrumbs-list__item:last-of-type:after {
+  background-image: none;
+}
+
 /* Catalog Main */
 
 .main-title {
