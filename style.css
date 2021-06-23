@@ -1377,7 +1377,7 @@
 
 .search {
   position: absolute;
-  top: 0;
+  top: 14px;
   left: -309px;
   z-index: 7;
 
@@ -1434,14 +1434,13 @@
 
 .signin {
   position: absolute;
-  top: 39px;
-  right: 110px;
+  top: 50px;
+  right: 143px;
   z-index: 7;
 
   display: none;
-  width: 100%px;
+  width: 100%;
   height: auto;
-  margin-top: 11px;
 
   background-color: transparent;
 }
