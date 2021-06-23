@@ -20,35 +20,36 @@
           </a>
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__list-item nav-item nav-item-current">
-                <a class="nav-item__link nav-item__link-current" tabindex="0">Каталог</a>
+              <li class="main-nav__list-item nav-item nav-item-current" tabindex="0">
+                <a class="nav-item__link nav-item__link-current" tabindex="-1">Каталог</a>
                 <section class="nav-item__site-nav site-nav">
                     <h2 class="visually-hidden">Меню каталога</h2>
                     <div class="site-nav-wrapper">
                       <ul class="site-nav__list">
-                        <li class="site-nav__list-item">
-                          <a class="site-nav__list-item-link site-nav__list-item-link-special" href="#">Новинки</a>
+                        <li class="site-nav__list-item" tabindex="0">
+                          <a class="site-nav__list-item-link site-nav__list-item-link-special" href="#" tabindex="-1">Новинки</a>
                         </li>
                         <li class="site-nav__list-item site-nav__list-item-current">
-                          <a class="site-nav__list-item-link">Сливочное</a></li>
-                        <li class="site-nav__list-item">
-                          <a class="site-nav__list-item-link" href="#">Щербеты</a>
+                          <a class="site-nav__list-item-link">Сливочное</a>
                         </li>
-                        <li class="site-nav__list-item">
-                          <a class="site-nav__list-item-link" href="#">Фруктовый лед</a>
+                        <li class="site-nav__list-item" tabindex="0">
+                          <a class="site-nav__list-item-link" href="#" tabindex="-1">Щербеты</a>
                         </li>
-                        <li class="site-nav__list-item">
-                          <a class="site-nav__list-item-link" href="#">Мелорин</a>
+                        <li class="site-nav__list-item" tabindex="0">
+                          <a class="site-nav__list-item-link" href="#" tabindex="-1">Фруктовый лед</a>
+                        </li>
+                        <li class="site-nav__list-item" tabindex="0">
+                          <a class="site-nav__list-item-link" href="#" tabindex="-1">Мелорин</a>
                         </li>
                       </ul>
                     </div>
                   </section>
               </li>
-              <li class="main-nav__list-item nav-item">
-                <a class="nav-item__link" href="#">Доставка и оплата</a>
+              <li class="main-nav__list-item nav-item" tabindex="0">
+                <a class="nav-item__link" href="#" tabindex="-1">Доставка и оплата</a>
               </li>
-              <li class="main-nav__list-item nav-item">
-                <a class="nav-item__link" href="#">О компании</a>
+              <li class="main-nav__list-item nav-item" tabindex="0">
+                <a class="nav-item__link" href="#" tabindex="-1">О компании</a>
               </li>
             </ul>
           </nav>
@@ -141,12 +142,14 @@
             <div class="filters-form__wrapper">
               <fieldset class="filters-form__fieldset">
                 <legend class="filters-form__legend">Сортировка:</legend>
-                <select class="filters-form__select" name="sorting">
-                  <option value="popular">По популярности</option>
-                  <option value="cheap">Сначала недорогие</option>
-                  <option value="expensive">Сначала дорогие</option>
-                  <option value="fat">По жирности</option>
-                </select>
+                <div class="filters-form__select-wrapper" tabindex="-1">
+                  <select class="filters-form__select" name="sorting">
+                    <option value="popular">По популярности</option>
+                    <option value="cheap">Сначала недорогие</option>
+                    <option value="expensive">Сначала дорогие</option>
+                    <option value="fat">По жирности</option>
+                  </select>
+                </div>
               </fieldset>
 
               <fieldset class="filters-form__fieldset">
@@ -222,7 +225,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
@@ -232,7 +235,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-кофейное с кусочками шоколада</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
@@ -242,7 +245,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-клубничное с присыпкой из белого шоколада</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good4.jpg" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
@@ -252,7 +255,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное крем-брюле<br>с карамельной подливкой</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good5.jpg" width="267" height="267" alt="Сливочное мороженое с брусничным джемом">
@@ -262,7 +265,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с брусничным<br>джемом</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good6.jpg" width="267" height="267" alt="Сливочно-черничное мороженое с цельными ягодами черники">
@@ -272,7 +275,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-черничное с цельными ягодами черники</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good7.jpg" width="267" height="267" alt="Сливочно-лимонное мороженое с карамельной присыпкой">
@@ -282,7 +285,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-лимонное с карамельной присыпкой</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good8.jpg" width="267" height="267" alt="Сливочное мороженое с шоколадной стружкой">
@@ -292,7 +295,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с шоколадной стружкой</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good9.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое с кусочками шоколада">
@@ -302,7 +305,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочно-ванильное<br>с кусочками шоколада</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good10.jpg" width="267" height="267" alt="Сливочноe мороженое с ментоловым сиропом">
@@ -312,7 +315,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочноe с ментоловым сиропом</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good11.jpg" width="267" height="267" alt="Сливочное мороженое с кусочками черного шоколада">
@@ -322,7 +325,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с кусочками черного шоколада</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item" tabindex="0">
               <img class="catalog-item__image" src="img/image-good12.jpg" width="267" height="267" alt="Сливочное мороженое с мятным сиропом">
@@ -332,7 +335,7 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с мятным сиропом</span>
-              <a class="catalog-item__link button-link" href="#">Быстрый просмотр</a>
+              <a class="catalog-item__link button-link" href="#" tabindex="-1">Быстрый просмотр</a>
             </li>
           </ul>
           <div class="pagination">
