@@ -31,68 +31,49 @@
           </a>
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li
-                class="main-nav__list-item nav-item nav-item-current"
-                tabindex="0"
-              >
-                <a class="nav-item__link nav-item__link-current" tabindex="-1"
-                  >Каталог</a
+              <li class="main-nav__list-item nav-item">
+                <a class="nav-item__link-current" tabindex="0"
+                  ><span class="nav-item__link-text">Каталог</span></a
                 >
-                <section class="nav-item__site-nav site-nav">
-                  <h2 class="visually-hidden">Меню каталога</h2>
-                  <div class="site-nav-wrapper">
-                    <ul class="site-nav__list">
-                      <li class="site-nav__list-item" tabindex="0">
-                        <a
-                          class="
-                            site-nav__list-item-link
-                            site-nav__list-item-link-special
-                          "
-                          href="#"
-                          tabindex="-1"
-                          >Новинки</a
-                        >
-                      </li>
-                      <li
-                        class="site-nav__list-item site-nav__list-item-current"
+                <div class="site-nav-wrapper">
+                  <ul class="site-nav__list">
+                    <li class="site-nav__list-item site-nav__list-item-special">
+                      <a class="site-nav__list-item-link" href="#">Новинки</a>
+                    </li>
+                    <li class="site-nav__link-item-separator"></li>
+                    <li class="site-nav__list-item">
+                      <a class="site-nav__list-item-link" href="catalog.html"
+                        >Сливочное</a
                       >
-                        <a class="site-nav__list-item-link">Сливочное</a>
-                      </li>
-                      <li class="site-nav__list-item" tabindex="0">
-                        <a
-                          class="site-nav__list-item-link"
-                          href="#"
-                          tabindex="-1"
-                          >Щербеты</a
-                        >
-                      </li>
-                      <li class="site-nav__list-item" tabindex="0">
-                        <a
-                          class="site-nav__list-item-link"
-                          href="#"
-                          tabindex="-1"
-                          >Фруктовый лед</a
-                        >
-                      </li>
-                      <li class="site-nav__list-item" tabindex="0">
-                        <a
-                          class="site-nav__list-item-link"
-                          href="#"
-                          tabindex="-1"
-                          >Мелорин</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </section>
+                    </li>
+                    <li class="site-nav__list-item">
+                      <a class="site-nav__list-item-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="site-nav__list-item">
+                      <a class="site-nav__list-item-link" href="#"
+                        >Фруктовый лед</a
+                      >
+                    </li>
+                    <li class="site-nav__list-item">
+                      <a
+                        class="site-nav__list-item-link"
+                        href="blank.html"
+                        target="_blank"
+                        >Мелорин</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li class="main-nav__list-item nav-item" tabindex="0">
-                <a class="nav-item__link" href="#" tabindex="-1"
-                  >Доставка и оплата</a
+              <li class="main-nav__list-item nav-item">
+                <a class="nav-item__link" href="#"
+                  ><span class="nav-item__link-text">Доставка и оплата</span></a
                 >
               </li>
-              <li class="main-nav__list-item nav-item" tabindex="0">
-                <a class="nav-item__link" href="#" tabindex="-1">О компании</a>
+              <li class="main-nav__list-item nav-item">
+                <a class="nav-item__link" href="#"
+                  ><span class="nav-item__link-text">О компании</span></a
+                >
               </li>
             </ul>
           </nav>
@@ -455,7 +436,10 @@
           </form>
 
           <ul class="catalog-list">
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good1.jpg"
@@ -471,11 +455,17 @@
               <span class="catalog-item__text"
                 >Сливочное с апельсиновым джемом и цитрусовой стружкой</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good2.jpg"
@@ -491,11 +481,17 @@
               <span class="catalog-item__text"
                 >Сливочно-кофейное с кусочками шоколада</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good3.jpg"
@@ -511,11 +507,17 @@
               <span class="catalog-item__text"
                 >Сливочно-клубничное с присыпкой из белого шоколада</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good4.jpg"
@@ -531,11 +533,17 @@
               <span class="catalog-item__text"
                 >Сливочное крем-брюле<br />с карамельной подливкой</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good5.jpg"
@@ -551,11 +559,17 @@
               <span class="catalog-item__text"
                 >Сливочное с брусничным<br />джемом</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good6.jpg"
@@ -571,11 +585,17 @@
               <span class="catalog-item__text"
                 >Сливочно-черничное с цельными ягодами черники</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good7.jpg"
@@ -591,11 +611,17 @@
               <span class="catalog-item__text"
                 >Сливочно-лимонное с карамельной присыпкой</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good8.jpg"
@@ -611,11 +637,17 @@
               <span class="catalog-item__text"
                 >Сливочное с шоколадной стружкой</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good9.jpg"
@@ -631,11 +663,17 @@
               <span class="catalog-item__text"
                 >Сливочно-ванильное<br />с кусочками шоколада</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good10.jpg"
@@ -651,11 +689,17 @@
               <span class="catalog-item__text"
                 >Сливочноe с ментоловым сиропом</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good11.jpg"
@@ -671,11 +715,17 @@
               <span class="catalog-item__text"
                 >Сливочное с кусочками черного шоколада</span
               >
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
-            <li class="catalog-list__item catalog-item" tabindex="0">
+            <li
+              class="catalog-list__item catalog-item catalog-item--view"
+              tabindex="0"
+            >
               <img
                 class="catalog-item__image"
                 src="img/image-good12.jpg"
@@ -689,7 +739,10 @@
                 <span class="price-group__item-text">/кг</span>
               </p>
               <span class="catalog-item__text">Сливочное с мятным сиропом</span>
-              <a class="catalog-item__link button-link" href="#" tabindex="-1"
+              <a
+                class="catalog-item__link button-link button-link--view"
+                href="#"
+                tabindex="-1"
                 >Быстрый просмотр</a
               >
             </li>
