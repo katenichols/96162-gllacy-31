@@ -4,9 +4,10 @@ let linkSignin = document.querySelector(".main-header__link-login");
 let signinForm = document.querySelector(".signin");
 let linkCart = document.querySelector(".main-header__link-full");
 let cartForm = document.querySelector(".cart");
-let controlsList = document.querySelector(".advertisement-controls");
-// let sliderCheck = controlsList.querySelector('input[type="radio"]:checked');
-let sliderButtons = controlsList.querySelectorAll(
+let feedbackButton = document.querySelector(".contacts-info__link-submit");
+let feedbackForm = document.querySelector(".feedback");
+let feedbackClose = document.querySelector(".feedback-form__button-close");
+let sliderButtons = document.querySelectorAll(
   ".advertisement-controls__item-input"
 );
 let siteWrapper = document.querySelector(".site-wrapper");
@@ -47,6 +48,14 @@ if (linkCart !== null) {
   });
 }
 
+feedbackButton.addEventListener("click", function () {
+  feedbackForm.classList.toggle("form-show");
+});
+
+feedbackClose.addEventListener("click", function () {
+  feedbackForm.classList.remove("form-show");
+});
+
 // Закрытие форм по нажатию клавиши Esc
 
 window.addEventListener("keydown", function (evt) {
@@ -62,6 +71,10 @@ window.addEventListener("keydown", function (evt) {
           if (cartForm.classList.contains("cart-show")) {
             cartForm.classList.remove("cart-show");
           }
+        } else {
+          if (feedbackForm.classList.contains("form-show")) {
+            feedbackForm.classList.remove("form-show");
+          }
         }
       }
     }
@@ -70,18 +83,9 @@ window.addEventListener("keydown", function (evt) {
 
 // Переключение слайдов главной страницы
 
-controlsList.addEventListener("click", function () {
-  sliderToggle();
-});
-
-for (let k = 0; k < sliderButtons.length; k += 1) {
-  sliderButtons[k].addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (evt.key === "Enter") {
-      console.log(
-        "Нажат Enter на переключателе " + sliderButtons[k].getAttribute("value")
-      );
-    }
+for (let m = 0; m < sliderButtons.length; m += 1) {
+  sliderButtons[m].addEventListener("click", function () {
+    sliderToggle();
   });
 }
 
@@ -107,26 +111,3 @@ function sliderToggle() {
     }
   }
 }
-
-// controlsList.addEventListener("click", function () {
-//   for (let y = 0; y < sliderButtons.length; y += 1) {
-//     for (let i = 0; i < titleList.length; i += 1) {
-//       if (sliderButtons[y].checked) {
-//         if (
-//           titleList[i].getAttribute("value") !==
-//           sliderButtons[y].getAttribute("value")
-//         ) {
-//           if (
-//             titleList[i].classList.contains("advertisement-list__item-current")
-//           ) {
-//             titleList[i].classList.remove("advertisement-list__item-current");
-//             siteWrapper.classList.remove("site-wrapper-" + [i + 1]);
-//           }
-//         } else {
-//           titleList[i].classList.add("advertisement-list__item-current");
-//           siteWrapper.classList.add("site-wrapper-" + [i + 1]);
-//         }
-//       }
-//     }
-//   }
-// });

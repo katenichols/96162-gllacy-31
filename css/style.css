@@ -1836,6 +1836,12 @@
   border: 0;
 }
 
+.feedback-form__button-close:hover {
+  cursor: url("../img/cursor-hand.png"), pointer;
+  box-shadow: 0 0 0 2px var(--basic-dark-color),
+    0 0 2px 4px var(--light-unique-opacity-color);
+}
+
 .feedback-wrapper {
   margin: 0;
 }
