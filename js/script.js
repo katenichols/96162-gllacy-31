@@ -2,18 +2,20 @@ let linkSearch = document.querySelector(".main-header__link-search");
 let searchForm = document.querySelector(".search");
 let linkSignin = document.querySelector(".main-header__link-login");
 let signinForm = document.querySelector(".signin");
+let inputLogin = signinForm.querySelector('[type="email"]');
+let inputPassword = signinForm.querySelector('[type="password"]');
+let signinSubmit = signinForm.querySelector(".signin-form__button");
 let linkCart = document.querySelector(".main-header__link-full");
 let cartForm = document.querySelector(".cart");
-let feedbackButton = document.querySelector(".contacts-info__link-submit");
-let feedbackForm = document.querySelector(".feedback");
-let feedbackClose = document.querySelector(".feedback-form__button-close");
-let sliderButtons = document.querySelectorAll(
-  ".advertisement-controls__item-input"
-);
-let siteWrapper = document.querySelector(".site-wrapper");
-let titleList = document.querySelectorAll(".advertisement-list__item");
 
-// Отображение/скрытие форм поиска, входа, корзины
+try {
+  storage = localStorage.getItem("inputLogin");
+  storage = localStorage.getItem("inputPassword");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+// Отображение/скрытие форм поиска, входа, корзины, обратной связи
 
 linkSearch.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -48,12 +50,31 @@ if (linkCart !== null) {
   });
 }
 
-feedbackButton.addEventListener("click", function () {
-  feedbackForm.classList.toggle("form-show");
-});
+// Проверка форм на пустые поля
 
-feedbackClose.addEventListener("click", function () {
-  feedbackForm.classList.remove("form-show");
+signinSubmit.addEventListener("click", function (evt) {
+  if (!inputLogin.value) {
+    evt.preventDefault();
+    inputLogin.style.outline = "3px solid rgb(140, 13, 30, 0.5)";
+  } else {
+    inputLogin.style.outline = "none";
+  }
+  if (!inputPassword.value) {
+    evt.preventDefault();
+    inputPassword.style.outline = "3px solid rgb(140, 13, 30, 0.5)";
+  } else {
+    inputPassword.style.outline = "none";
+  }
+
+  if (storage) {
+    inputLogin.value = storage;
+    inputPassword.value = storage;
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("inputLogin", inputLogin.value);
+      localStorage.setItem("inputPassword", inputPassword.value);
+    }
+  }
 });
 
 // Закрытие форм по нажатию клавиши Esc
@@ -71,43 +92,8 @@ window.addEventListener("keydown", function (evt) {
           if (cartForm.classList.contains("cart-show")) {
             cartForm.classList.remove("cart-show");
           }
-        } else {
-          if (feedbackForm.classList.contains("form-show")) {
-            feedbackForm.classList.remove("form-show");
-          }
         }
       }
     }
   }
 });
-
-// Переключение слайдов главной страницы
-
-for (let m = 0; m < sliderButtons.length; m += 1) {
-  sliderButtons[m].addEventListener("click", function () {
-    sliderToggle();
-  });
-}
-
-function sliderToggle() {
-  for (let y = 0; y < sliderButtons.length; y += 1) {
-    for (let i = 0; i < titleList.length; i += 1) {
-      if (sliderButtons[y].checked) {
-        if (
-          titleList[i].getAttribute("value") !==
-          sliderButtons[y].getAttribute("value")
-        ) {
-          if (
-            titleList[i].classList.contains("advertisement-list__item-current")
-          ) {
-            titleList[i].classList.remove("advertisement-list__item-current");
-            siteWrapper.classList.remove("site-wrapper-" + [i + 1]);
-          }
-        } else {
-          titleList[i].classList.add("advertisement-list__item-current");
-          siteWrapper.classList.add("site-wrapper-" + [i + 1]);
-        }
-      }
-    }
-  }
-}

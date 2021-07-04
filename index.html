@@ -187,57 +187,6 @@
 
       <main class="page-main">
         <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
-        <div class="container">
-          <section class="feedback">
-            <form
-              class="feedback-form"
-              action="https://echo.htmlacademy.ru"
-              method="post"
-            >
-              <button
-                class="feedback-form__button-close"
-                type="button"
-                aria-label="Закрыть окно"
-              ></button>
-              <h2 class="feedback-form__title">Мы обязательно вам ответим!</h2>
-              <p class="feedback-wrapper">
-                <label class="visually-hidden" for="name-client"></label>
-                <input
-                  class="feedback-form__input"
-                  type="text"
-                  name="name-client"
-                  id="name-client"
-                  placeholder="Имя Фамилия"
-                  aria-label="Введите свои имя и фамилию"
-                />
-              </p>
-              <p class="feedback-wrapper">
-                <label class="visually-hidden" for="email-client"></label>
-                <input
-                  class="feedback-form__input"
-                  type="text"
-                  name="email-client"
-                  id="email-client"
-                  placeholder="email@example.com"
-                  aria-label="Введите свою электронную почту"
-                />
-              </p>
-              <p class="feedback-wrapper">
-                <label class="visually-hidden" for="client-text"></label>
-                <textarea
-                  class="feedback-form__textarea"
-                  name="client-text"
-                  id="client-text"
-                  placeholder="В свободной форме"
-                  aria-label="Задайте ваш вопрос или опишите свой случай"
-                ></textarea>
-              </p>
-              <button class="feedback-form__button button-link" type="submit">
-                Отправить
-              </button>
-            </form>
-          </section>
-        </div>
 
         <section class="advertisement">
           <div class="container">
@@ -583,12 +532,64 @@
                   >+7 800 555-86-28</a
                 >
                 <span class="contacts-info__text">(с 10 до 20 ежедневно)</span>
-                <a class="contacts-info__link-submit button-link" href="#"
-                  >Форма обратной связи</a
+                <button
+                  class="contacts-info__link-submit button-link"
+                  type="button"
                 >
+                  Форма обратной связи
+                </button>
               </div>
             </div>
           </div>
+          <section class="feedback">
+            <form
+              class="feedback-form"
+              action="https://echo.htmlacademy.ru"
+              method="post"
+            >
+              <button
+                class="feedback-form__button-close"
+                type="button"
+                aria-label="Закрыть окно"
+              ></button>
+              <h2 class="feedback-form__title">Мы обязательно вам ответим!</h2>
+              <p class="feedback-wrapper">
+                <label class="visually-hidden" for="name-client"></label>
+                <input
+                  class="feedback-form__input"
+                  type="text"
+                  name="name-client"
+                  id="name-client"
+                  placeholder="Имя Фамилия"
+                  aria-label="Введите свои имя и фамилию"
+                />
+              </p>
+              <p class="feedback-wrapper">
+                <label class="visually-hidden" for="email-client"></label>
+                <input
+                  class="feedback-form__input"
+                  type="text"
+                  name="email-client"
+                  id="email-client"
+                  placeholder="email@example.com"
+                  aria-label="Введите свою электронную почту"
+                />
+              </p>
+              <p class="feedback-wrapper">
+                <label class="visually-hidden" for="client-text"></label>
+                <textarea
+                  class="feedback-form__textarea"
+                  name="client-text"
+                  id="client-text"
+                  placeholder="В свободной форме"
+                  aria-label="Задайте ваш вопрос или опишите свой случай"
+                ></textarea>
+              </p>
+              <button class="feedback-form__button button-link" type="submit">
+                Отправить
+              </button>
+            </form>
+          </section>
         </section>
       </main>
 
@@ -776,5 +777,6 @@
       </footer>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/forms.js"></script>
   </body>
 </html>
