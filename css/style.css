@@ -1379,10 +1379,12 @@
   background-size: cover;
 }
 
-.contacts iframe {
+.contacts-map {
   position: absolute;
   top: 0;
   left: 0;
+
+  min-width: 1400px;
 }
 
 .contacts-wrapper {
@@ -1799,20 +1801,22 @@
 .feedback {
   position: fixed;
   z-index: 8;
-  top: 338px;
-  /* bottom: 0; */
-  left: 50%;
+
+  top: 0;
+  left: 0;
 
   display: none;
-  width: 477px;
-  height: auto;
-  margin-left: -239px;
+  width: 100%;
+  height: 100%;
 }
 
 .feedback-form {
   position: relative;
 
   display: block;
+  width: 477px;
+  height: 441px;
+  margin: auto;
   padding-top: 15px;
   padding-right: 25px;
   padding-bottom: 27px;
@@ -2606,7 +2610,7 @@
 }
 
 .form-feedback-show {
-  display: block;
+  display: flex;
   animation-name: bounce;
   animation-duration: 0.6s;
 }

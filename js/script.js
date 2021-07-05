@@ -1,12 +1,15 @@
-let linkSearch = document.querySelector(".main-header__link-search");
-let searchForm = document.querySelector(".search");
-let linkSignin = document.querySelector(".main-header__link-login");
-let signinForm = document.querySelector(".signin");
-let inputLogin = signinForm.querySelector('[type="email"]');
-let inputPassword = signinForm.querySelector('[type="password"]');
-let signinSubmit = signinForm.querySelector(".signin-form__button");
-let linkCart = document.querySelector(".main-header__link-full");
-let cartForm = document.querySelector(".cart");
+const linkSearch = document.querySelector(".main-header__link-search");
+const searchForm = document.querySelector(".search");
+const linkSignin = document.querySelector(".main-header__link-login");
+const signinForm = document.querySelector(".signin");
+const inputLogin = signinForm.querySelector('[type="email"]');
+const inputPassword = signinForm.querySelector('[type="password"]');
+const signinSubmit = signinForm.querySelector(".signin-form__button");
+const linkCart = document.querySelector(".main-header__link-full");
+const cartForm = document.querySelector(".cart");
+
+// const isStorageSupport = true;
+// const storage = "";
 
 try {
   storage = localStorage.getItem("inputLogin");
