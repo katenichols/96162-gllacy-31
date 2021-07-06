@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     />
     <link href="normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
   <body class="page-body">
@@ -91,80 +91,84 @@
               </nav>
             </div>
             <div class="main-header__user-nav-wrapper">
-              <a class="main-header__link main-header__link-search" href="#">
-                <span
-                  class="visually-hidden"
-                  aria-label="Поиск по сайту"
-                  role="search"
-                  >Поиск</span
-                >
-              </a>
-              <div class="search">
-                <form
-                  class="search-form"
-                  action="https://echo.htmlacademy.ru"
-                  method="post"
-                >
-                  <label class="visually-hidden" for="searching"></label>
-                  <input
-                    class="search-form__input"
-                    type="text"
-                    id="searching"
-                    name="searching"
-                    placeholder="Крем-брюле"
-                    aria-label="Напишите, что нужно найти"
-                  />
-                </form>
+              <div class="search-wrapper">
+                <a class="main-header__link main-header__link-search" href="#">
+                  <span
+                    class="visually-hidden"
+                    aria-label="Поиск по сайту"
+                    role="search"
+                    >Поиск</span
+                  >
+                </a>
+                <div class="search">
+                  <form
+                    class="search-form"
+                    action="https://echo.htmlacademy.ru"
+                    method="post"
+                  >
+                    <label class="visually-hidden" for="searching"></label>
+                    <input
+                      class="search-form__input"
+                      type="text"
+                      id="searching"
+                      name="searching"
+                      placeholder="Крем-брюле"
+                      aria-label="Напишите, что нужно найти"
+                    />
+                  </form>
+                </div>
               </div>
-              <a
-                class="main-header__link main-header__link-login"
-                href="#"
-                aria-label="Авторизация на сайте"
-                >Вход</a
-              >
-              <div class="signin">
-                <form
-                  class="signin-form"
-                  action="https://echo.htmlacademy.ru"
-                  method="post"
+              <div class="signin-wrapper">
+                <a
+                  class="main-header__link main-header__link-login"
+                  href="#"
+                  aria-label="Авторизация на сайте"
+                  >Вход</a
                 >
-                  <p>
-                    <label class="visually-hidden" for="login-email"></label>
-                    <input
-                      class="signin-form__input"
-                      type="email"
-                      name="login-email"
-                      id="login-email"
-                      placeholder="email@example.com"
-                      aria-label="Введите свою электронную почту"
-                    />
-                  </p>
-                  <p>
-                    <label class="visually-hidden" for="password"></label>
-                    <input
-                      class="signin-form__input"
-                      type="password"
-                      name="password"
-                      id="password"
-                      placeholder="......"
-                      aria-label="Введите пароль"
-                    />
-                  </p>
-                  <div class="signin-form-wrapper">
-                    <button
-                      class="signin-form__button button-link"
-                      type="submit"
-                    >
-                      Войти
-                    </button>
-                    <div class="signin-form-link-wrapper">
-                      <a class="signin-form__link" href="#">Забыли пароль?</a>
-                      <a class="signin-form__link" href="#"
-                        >Новая регистрация</a
+                <div class="signin">
+                  <form
+                    class="signin-form"
+                    action="https://echo.htmlacademy.ru"
+                    method="post"
+                  >
+                    <p>
+                      <label class="visually-hidden" for="login-email"></label>
+                      <input
+                        class="signin-form__input"
+                        type="email"
+                        name="login-email"
+                        id="login-email"
+                        placeholder="email@example.com"
+                        aria-label="Введите свою электронную почту"
+                      />
+                    </p>
+                    <p>
+                      <label class="visually-hidden" for="password"></label>
+                      <input
+                        class="signin-form__input"
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="......"
+                        aria-label="Введите пароль"
+                      />
+                    </p>
+                    <div class="signin-form-wrapper">
+                      <button
+                        class="signin-form__button button-link"
+                        type="submit"
                       >
+                        Войти
+                      </button>
+                      <div class="signin-form-link-wrapper">
+                        <a class="signin-form__link" href="#">Забыли пароль?</a>
+                        <a class="signin-form__link" href="#"
+                          >Новая регистрация</a
+                        >
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
               <a
                 class="main-header__link main-header__link-empty"
@@ -330,12 +334,20 @@
                   src="img/image-good1.jpg"
                   width="267"
                   height="267"
-                  alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"
+                  alt=""
                 />
                 <p class="goods-item__text-group price-group">
-                  <span class="price-group__item-cost">310</span>
-                  <span class="price-group__item-rub">₽</span>
-                  <span class="price-group__item-text">/кг</span>
+                  <span
+                    class="price-group__item-cost"
+                    aria-label="триста десять"
+                    >310</span
+                  >
+                  <span class="price-group__item-rub" aria-label="рублей"
+                    >₽</span
+                  >
+                  <span class="price-group__item-text" aria-label="за килограм"
+                    >/кг</span
+                  >
                 </p>
                 <span class="goods-item__text"
                   >Сливочное с апельсиновым джемом и цитрусовой стружкой</span
@@ -356,12 +368,20 @@
                   src="img/image-good2.jpg"
                   width="267"
                   height="267"
-                  alt="Сливочно-кофейное мороженое с кусочками шоколада"
+                  alt=""
                 />
                 <p class="goods-item__text-group price-group">
-                  <span class="price-group__item-cost">380</span>
-                  <span class="price-group__item-rub">₽</span>
-                  <span class="price-group__item-text">/кг</span>
+                  <span
+                    class="price-group__item-cost"
+                    aria-label="триста восемьдесят"
+                    >380</span
+                  >
+                  <span class="price-group__item-rub" aria-label="рублей"
+                    >₽</span
+                  >
+                  <span class="price-group__item-text" aria-label="за килограм"
+                    >/кг</span
+                  >
                 </p>
                 <span class="goods-item__text"
                   >Сливочно-кофейное с кусочками шоколада</span
@@ -382,12 +402,20 @@
                   src="img/image-good3.jpg"
                   width="267"
                   height="267"
-                  alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"
+                  alt=""
                 />
                 <p class="goods-item__text-group price-group">
-                  <span class="price-group__item-cost">355</span>
-                  <span class="price-group__item-rub">₽</span>
-                  <span class="price-group__item-text">/кг</span>
+                  <span
+                    class="price-group__item-cost"
+                    aria-label="триста пятьдесят пять"
+                    >355</span
+                  >
+                  <span class="price-group__item-rub" aria-label="рублей"
+                    >₽</span
+                  >
+                  <span class="price-group__item-text" aria-label="за килограм"
+                    >/кг</span
+                  >
                 </p>
                 <span class="goods-item__text"
                   >Сливочно-клубничное<br />с присыпкой из белого шоколада</span
@@ -408,12 +436,20 @@
                   src="img/image-good4.jpg"
                   width="267"
                   height="267"
-                  alt="Сливочное мороженое крем-брюле с карамельной подливкой "
+                  alt=""
                 />
                 <p class="goods-item__text-group price-group">
-                  <span class="price-group__item-cost">415</span>
-                  <span class="price-group__item-rub">₽</span>
-                  <span class="price-group__item-text">/кг</span>
+                  <span
+                    class="price-group__item-cost"
+                    aria-label="четыреста пятнадцать"
+                    >415</span
+                  >
+                  <span class="price-group__item-rub" aria-label="рублей"
+                    >₽</span
+                  >
+                  <span class="price-group__item-text" aria-label="за килограм"
+                    >/кг</span
+                  >
                 </p>
                 <span class="goods-item__text"
                   >Сливочное крем-брюле<br />с карамельной подливкой</span
@@ -494,6 +530,7 @@
                   <button
                     class="subscription-form__button button-link"
                     type="submit"
+                    value="Подписаться на рассылку"
                   >
                     Отправить
                   </button>
@@ -507,9 +544,9 @@
           <h2 class="visually-hidden">Как до нас добраться?</h2>
           <iframe
             class="contacts-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.20450639796104!2d30.31683382929291!3d59.96834199886794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0x74d4f0cbfe1fd995!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUg0LrQvtGA0L_Rg9GBINCfLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3MDIy!5e0!3m2!1sru!2sru!4v1625301713875!5m2!1sru!2sru"
-            width="100%"
-            height="430"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.4184814381256!2d30.317946946033633!3d59.968027878641564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696312ccbf790e9%3A0x5dd4e565854c541d!2z0JPQu9C10LnRgdC4!5e0!3m2!1sru!2sru!4v1625558535407!5m2!1sru!2sru"
+            width="600"
+            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -777,7 +814,7 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.js"></script>
-    <script async src="js/forms.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/forms.min.js"></script>
   </body>
 </html>

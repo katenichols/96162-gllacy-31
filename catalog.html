@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     />
     <link href="normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
   <body class="page-body">
@@ -79,123 +79,140 @@
           </nav>
         </div>
         <div class="main-header__user-nav-wrapper">
-          <a class="main-header__link main-header__link-search" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-          <div class="search">
-            <form
-              class="search-form"
-              action="https://echo.htmlacademy.ru"
-              method="post"
-            >
-              <label class="visually-hidden" for="searching"></label>
-              <input
-                class="search-form__input"
-                type="text"
-                id="searching"
-                name="searching"
-                placeholder="Крем-брюле"
-              />
-            </form>
-          </div>
-          <a class="main-header__link main-header__link-login" href="#">Вход</a>
-          <div class="signin">
-            <form
-              class="signin-form"
-              action="https://echo.htmlacademy.ru"
-              method="post"
-            >
-              <p>
-                <label class="visually-hidden" for="login-email"></label>
+          <div class="search-wrapper">
+            <a class="main-header__link main-header__link-search" href="#">
+              <span class="visually-hidden" aria-label="Поиск по сайту"
+                >Поиск</span
+              >
+            </a>
+            <div class="search">
+              <form
+                class="search-form"
+                action="https://echo.htmlacademy.ru"
+                method="post"
+              >
+                <label class="visually-hidden" for="searching"></label>
                 <input
-                  class="signin-form__input"
-                  type="email"
-                  name="login-email"
-                  id="login-email"
-                  placeholder="email@example.com"
+                  class="search-form__input"
+                  type="text"
+                  id="searching"
+                  name="searching"
+                  placeholder="Крем-брюле"
                 />
-              </p>
-              <p>
-                <label class="visually-hidden" for="password"></label>
-                <input
-                  class="signin-form__input"
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="......"
-                />
-              </p>
-              <div class="signin-form-wrapper">
-                <button class="signin-form__button button-link" type="submit">
-                  Войти
-                </button>
-                <div class="signin-form-link-wrapper">
-                  <a class="signin-form__link" href="#">Забыли пароль?</a>
-                  <a class="signin-form__link" href="#">Новая регистрация</a>
-                </div>
-              </div>
-            </form>
-          </div>
-          <a class="main-header__link main-header__link-full" href="#"
-            >2 товара</a
-          >
-          <section class="cart">
-            <h2 class="visually-hidden">Корзина</h2>
-            <table class="cart-table">
-              <caption class="visually-hidden">
-                Товары в корзине
-              </caption>
-              <tr class="cart-table__row-first">
-                <td class="cart-table__cell cart-table__cell-delete">
-                  <button
-                    class="cart-table__button"
-                    type="button"
-                    aria-label="Удалить товар"
-                  ></button>
-                </td>
-                <td
-                  class="
-                    cart-table__cell
-                    cart-table__cell-text
-                    cart-table__cell-text--first
-                  "
-                >
-                  Пломбир с апельсиновым джемом
-                </td>
-                <td class="cart-table__cell cart-table__cell-price">
-                  1,5 кг x <span class="cart-good-price">200 руб.</span>
-                </td>
-                <td class="cart-table__cell cart-table__cell-cost">300 руб.</td>
-              </tr>
-              <tr class="cart-table__row-last">
-                <td class="cart-table__cell cart-table__cell-delete">
-                  <button
-                    class="cart-table__button"
-                    type="button"
-                    aria-label="Удалить товар"
-                  ></button>
-                </td>
-                <td
-                  class="
-                    cart-table__cell
-                    cart-table__cell-text
-                    cart-table__cell-text--second
-                  "
-                >
-                  Клубничный пломбир с присыпкой из белого шоколада
-                </td>
-                <td class="cart-table__cell cart-table__cell-price">
-                  1,5 кг x <span class="cart-good-price">300 руб.</span>
-                </td>
-                <td class="cart-table__cell cart-table__cell-cost">450 руб.</td>
-              </tr>
-            </table>
-            <div class="cart-result">
-              <span class="cart-result__text">Итого: </span>
-              <span class="cart-result__text cart-result__sum">750 руб.</span>
+              </form>
             </div>
-            <a class="cart-link button-link" href="#">Оформить заказ</a>
-          </section>
+          </div>
+          <div class="signin-wrapper">
+            <a
+              class="main-header__link main-header__link-login"
+              href="#"
+              aria-label="Авторизация на сайте"
+              >Вход</a
+            >
+            <div class="signin">
+              <form
+                class="signin-form"
+                action="https://echo.htmlacademy.ru"
+                method="post"
+              >
+                <p>
+                  <label class="visually-hidden" for="login-email"></label>
+                  <input
+                    class="signin-form__input"
+                    type="email"
+                    name="login-email"
+                    id="login-email"
+                    placeholder="email@example.com"
+                  />
+                </p>
+                <p>
+                  <label class="visually-hidden" for="password"></label>
+                  <input
+                    class="signin-form__input"
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="......"
+                  />
+                </p>
+                <div class="signin-form-wrapper">
+                  <button class="signin-form__button button-link" type="submit">
+                    Войти
+                  </button>
+                  <div class="signin-form-link-wrapper">
+                    <a class="signin-form__link" href="#">Забыли пароль?</a>
+                    <a class="signin-form__link" href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="cart-wrapper">
+            <a class="main-header__link main-header__link-full" href="#"
+              >2 товара</a
+            >
+            <section class="cart">
+              <h2 class="visually-hidden">Корзина</h2>
+              <table class="cart-table">
+                <caption class="visually-hidden">
+                  Товары в корзине
+                </caption>
+                <tr class="cart-table__row-first">
+                  <td class="cart-table__cell cart-table__cell-delete">
+                    <button
+                      class="cart-table__button"
+                      type="button"
+                      aria-label="Удалить товар"
+                    ></button>
+                  </td>
+                  <td
+                    class="
+                      cart-table__cell
+                      cart-table__cell-text
+                      cart-table__cell-text--first
+                    "
+                  >
+                    Пломбир с апельсиновым джемом
+                  </td>
+                  <td class="cart-table__cell cart-table__cell-price">
+                    1,5 кг x <span class="cart-good-price">200 руб.</span>
+                  </td>
+                  <td class="cart-table__cell cart-table__cell-cost">
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="cart-table__row-last">
+                  <td class="cart-table__cell cart-table__cell-delete">
+                    <button
+                      class="cart-table__button"
+                      type="button"
+                      aria-label="Удалить товар"
+                    ></button>
+                  </td>
+                  <td
+                    class="
+                      cart-table__cell
+                      cart-table__cell-text
+                      cart-table__cell-text--second
+                    "
+                  >
+                    Клубничный пломбир с присыпкой из белого шоколада
+                  </td>
+                  <td class="cart-table__cell cart-table__cell-price">
+                    1,5 кг x <span class="cart-good-price">300 руб.</span>
+                  </td>
+                  <td class="cart-table__cell cart-table__cell-cost">
+                    450 руб.
+                  </td>
+                </tr>
+              </table>
+              <div class="cart-result">
+                <span class="cart-result__text">Итого: </span>
+                <span class="cart-result__text cart-result__sum">750 руб.</span>
+              </div>
+              <a class="cart-link button-link" href="#">Оформить заказ</a>
+            </section>
+          </div>
         </div>
         <div class="main-header__info-wrapper">
           <span class="main-header__text">с 10 до 20, ежедневно</span>
@@ -445,12 +462,16 @@
                 src="img/image-good1.jpg"
                 width="267"
                 height="267"
-                alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">310</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span class="price-group__item-cost" aria-label="триста десять"
+                  >310</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочное с апельсиновым джемом и цитрусовой стружкой</span
@@ -471,12 +492,18 @@
                 src="img/image-good2.jpg"
                 width="267"
                 height="267"
-                alt="Сливочно-кофейное мороженое с кусочками шоколада"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">380</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="триста восемьдесят"
+                  >380</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочно-кофейное с кусочками шоколада</span
@@ -497,12 +524,18 @@
                 src="img/image-good3.jpg"
                 width="267"
                 height="267"
-                alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">355</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="триста пятьдесят пять"
+                  >355</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочно-клубничное с присыпкой из белого шоколада</span
@@ -523,12 +556,18 @@
                 src="img/image-good4.jpg"
                 width="267"
                 height="267"
-                alt="Сливочное мороженое крем-брюле с карамельной подливкой"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">415</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="четыреста пятнадцать"
+                  >415</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочное крем-брюле<br />с карамельной подливкой</span
@@ -549,12 +588,18 @@
                 src="img/image-good5.jpg"
                 width="267"
                 height="267"
-                alt="Сливочное мороженое с брусничным джемом"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">325</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="триста двадцать пять"
+                  >325</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочное с брусничным<br />джемом</span
@@ -575,12 +620,18 @@
                 src="img/image-good6.jpg"
                 width="267"
                 height="267"
-                alt="Сливочно-черничное мороженое с цельными ягодами черники"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">410</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="четыреста десять"
+                  >410</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочно-черничное с цельными ягодами черники</span
@@ -601,12 +652,18 @@
                 src="img/image-good7.jpg"
                 width="267"
                 height="267"
-                alt="Сливочно-лимонное мороженое с карамельной присыпкой"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">315</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="триста пятнадцать"
+                  >315</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочно-лимонное с карамельной присыпкой</span
@@ -627,12 +684,18 @@
                 src="img/image-good8.jpg"
                 width="267"
                 height="267"
-                alt="Сливочное мороженое с шоколадной стружкой"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">320</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="триста двадцать"
+                  >320</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочное с шоколадной стружкой</span
@@ -653,12 +716,18 @@
                 src="img/image-good9.jpg"
                 width="267"
                 height="267"
-                alt="Сливочно-ванильное мороженое с кусочками шоколада"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">440</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="четыреста сорок"
+                  >440</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочно-ванильное<br />с кусочками шоколада</span
@@ -679,12 +748,18 @@
                 src="img/image-good10.jpg"
                 width="267"
                 height="267"
-                alt="Сливочноe мороженое с ментоловым сиропом"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">435</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="четыреста тридцать пять"
+                  >435</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочноe с ментоловым сиропом</span
@@ -705,12 +780,18 @@
                 src="img/image-good11.jpg"
                 width="267"
                 height="267"
-                alt="Сливочное мороженое с кусочками черного шоколада"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">355</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="триста пятьдесят пять"
+                  >355</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text"
                 >Сливочное с кусочками черного шоколада</span
@@ -731,12 +812,18 @@
                 src="img/image-good12.jpg"
                 width="267"
                 height="267"
-                alt="Сливочное мороженое с мятным сиропом"
+                alt=""
               />
               <p class="catalog-item__text-group price-group">
-                <span class="price-group__item-cost">420</span>
-                <span class="price-group__item-rub">₽</span>
-                <span class="price-group__item-text">/кг</span>
+                <span
+                  class="price-group__item-cost"
+                  aria-label="четыреста двадцать"
+                  >420</span
+                >
+                <span class="price-group__item-rub" aria-label="рублей">₽</span>
+                <span class="price-group__item-text" aria-label="за килограм"
+                  >/кг</span
+                >
               </p>
               <span class="catalog-item__text">Сливочное с мятным сиропом</span>
               <a
@@ -956,6 +1043,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

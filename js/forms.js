@@ -22,6 +22,8 @@ try {
   isStorageSupport = false;
 }
 
+// Показ/скрытие формы обратной связи
+
 feedbackButton.addEventListener("click", function () {
   feedbackBlock.classList.toggle("form-feedback-show");
   clientText.value = "";
@@ -41,6 +43,8 @@ subscribeButton.addEventListener("click", function (evt) {
     subscribeInput.style.outline = "none";
   }
 });
+
+// Закрытие окон по нажатию на Esc
 
 window.addEventListener("keydown", function (evt) {
   if (evt.key === "Esc" || evt.key === "Escape") {
@@ -80,37 +84,9 @@ function sliderToggle1(m) {
   sliderButtons[m].checked = true;
 }
 
-// for (let m = 0; m < sliderButtons.length; m += 1) {
-//   sliderButtons[m].addEventListener("click", function () {
-//     sliderToggle();
-//   });
-// }
-
-// function sliderToggle() {
-//   for (let y = 0; y < sliderButtons.length; y += 1) {
-//     for (let i = 0; i < titleList.length; i += 1) {
-//       if (sliderButtons[y].checked) {
-//         if (
-//           titleList[i].getAttribute("value") !==
-//           sliderButtons[y].getAttribute("value")
-//         ) {
-//           if (
-//             titleList[i].classList.contains("advertisement-list__item-current")
-//           ) {
-//             titleList[i].classList.remove("advertisement-list__item-current");
-//             siteWrapper.classList.remove("site-wrapper-" + [i + 1]);
-//           }
-//         } else {
-//           titleList[i].classList.add("advertisement-list__item-current");
-//           siteWrapper.classList.add("site-wrapper-" + [i + 1]);
-//         }
-//       }
-//     }
-//   }
-// }
+// Проверка формы обратной связи на пустые поля
 
 const feedbackSubmit = feedbackBlock.querySelector('[type="submit"]');
-console.log("feedbackSubmit");
 
 feedbackSubmit.addEventListener("click", function (evt) {
   if (!nameClient.value) {
