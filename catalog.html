@@ -254,7 +254,8 @@
               <fieldset class="filters-form__fieldset">
                 <legend class="filters-form__legend">Сортировка:</legend>
                 <div class="filters-form__select-wrapper" tabindex="-1">
-                  <select class="filters-form__select" name="sorting">
+                  <label class="visually-hidden" for id="sorting">Фильтр товаров</label>
+                  <select class="filters-form__select" name="sorting" id="sorting">
                     <option value="popular">По популярности</option>
                     <option value="cheap">Сначала недорогие</option>
                     <option value="expensive">Сначала дорогие</option>
@@ -274,12 +275,12 @@
                     class="price-slider__button price-slider__button-left"
                     type="button"
                     tabindex="0"
-                  ></button>
+                  >Цена от</button>
                   <button
                     class="price-slider__button price-slider__button-right"
                     type="button"
                     tabindex="0"
-                  ></button>
+                  >Цена до</button>
                 </div>
               </fieldset>
 
@@ -455,7 +456,7 @@
                 src="img/image-good1.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"
               />
               <p class="catalog-item__text-group price-group">
                 <span class="price-group__item-cost" aria-label="триста десять"
@@ -485,7 +486,7 @@
                 src="img/image-good2.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочно-кофейное мороженое с кусочками шоколада"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -517,7 +518,7 @@
                 src="img/image-good3.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -549,7 +550,7 @@
                 src="img/image-good4.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочное мороженое крем-брюле с карамельной подливкой"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -581,7 +582,7 @@
                 src="img/image-good5.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочное мороженое с брусничным джемом"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -613,7 +614,7 @@
                 src="img/image-good6.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочно-черничное мороженое с цельными ягодами черники"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -645,7 +646,7 @@
                 src="img/image-good7.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочно-лимонное мороженое с карамельной присыпкой"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -677,7 +678,7 @@
                 src="img/image-good8.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочное мороженое с шоколадной стружкой"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -709,7 +710,7 @@
                 src="img/image-good9.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочно-ванильное мороженое с кусочками шоколада"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -741,7 +742,7 @@
                 src="img/image-good10.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочноe мороженое с ментоловым сиропом"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -773,7 +774,7 @@
                 src="img/image-good11.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочное мороженое с кусочками черного шоколада"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -805,7 +806,7 @@
                 src="img/image-good12.jpg"
                 width="267"
                 height="267"
-                alt=""
+                alt="Сливочное мороженое с мятным сиропом"
               />
               <p class="catalog-item__text-group price-group">
                 <span
@@ -828,30 +829,34 @@
             </li>
           </ul>
           <div class="pagination">
-            <a class="pagination-button pagination-button-left"></a>
+            <a class="pagination-button pagination-button-left"
+              aria-label="Предыдущая страница">
+            </a>
             <ul class="pagination-list">
               <li class="pagination-list__item">
                 <a
                   class="
-                    pagination-list__item-link pagination-list__item-link-active
-                  "
-                  >1</a
-                >
+                    pagination-list__item-link pagination-list__item-link-active"
+                  aria-label="Первая страница">
+                  1
+                </a>
               </li>
               <li class="pagination-list__item">
-                <a class="pagination-list__item-link no-transition" href="#">2</a>
+                <a class="pagination-list__item-link no-transition" href="#" aria-label="Вторая страница">2</a>
               </li>
               <li class="pagination-list__item">
-                <a class="pagination-list__item-link no-transition" href="#">3</a>
+                <a class="pagination-list__item-link no-transition" href="#" aria-label="Третья страница">3</a>
               </li>
               <li class="pagination-list__item">
-                <a class="pagination-list__item-link no-transition" href="#">4</a>
+                <a class="pagination-list__item-link no-transition" href="#" aria-label="Четвертая страница">4</a>
               </li>
               <li class="pagination-list__item">
-                <a class="pagination-list__item-link no-transition" href="#">5</a>
+                <a class="pagination-list__item-link no-transition" href="#" aria-label="Пятая страница">5</a>
               </li>
             </ul>
-            <a class="pagination-button pagination-button-right no-transition" href="#"></a>
+            <a class="pagination-button pagination-button-right no-transition" href="#"
+              aria-label="Следующая страница">
+            </a>
           </div>
         </section>
       </div>
