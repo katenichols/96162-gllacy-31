@@ -62,23 +62,23 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), url("fonts/roboto.woff2") format("woff2"),
-    url("fonts/roboto.woff") format("woff");
+  src: local("Roboto"), url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Medium";
   font-style: normal;
   font-weight: 500;
-  src: local("Roboto Medium"), url("fonts/robotomedium.woff2") format("woff2"),
-    url("fonts/robotomedium.woff") format("woff");
+  src: local("Roboto Medium"), url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Bold";
   font-style: normal;
   font-weight: 700;
-  src: local("Roboto Bold"), url("fonts/robotobold.woff2") format("woff2"),
+  src: local("Roboto Bold"), url("../fonts/robotobold.woff2") format("woff2"),
     url("fonts/robotobold.woff") format("woff");
 }
 
@@ -146,7 +146,9 @@
   line-height: 22px;
   font-weight: 400;
   color: var(--basic-white-color);
+}
 
+.catalog-body {
   background-color: var(--background-one-color);
 }
 
@@ -187,7 +189,8 @@
 .catalog-item__link,
 .pagination-list__item-link,
 .cart-link,
-.devs-special-text {
+.devs-special-text,
+.signin-form__button {
   text-decoration: none;
 }
 
@@ -876,7 +879,7 @@
 .advertisement-controls__item-input:hover
   + .advertisement-controls__item-label::before {
   background-color: var(--unique-background-color);
-  cursor: url("../img/cursor-hand.png"), pointer;
+  cursor: pointer;
 }
 
 .advertisement-controls__item-input:active
@@ -1906,7 +1909,7 @@
 }
 
 .feedback-form__button-close:hover {
-  cursor: url("../img/cursor-hand.png"), pointer;
+  cursor: pointer;
   -webkit-box-shadow: 0 0 0 2px var(--basic-dark-color),
     0 0 2px 4px var(--light-unique-opacity-color);
   box-shadow: 0 0 0 2px var(--basic-dark-color),
@@ -2250,7 +2253,7 @@
 
 .price-slider__button:hover,
 .price-slider__button:active {
-  cursor: url("../img/cursor-hand.png"), pointer;
+  cursor: pointer;
 }
 
 .price-slider__button:active {
@@ -2459,7 +2462,7 @@
 
   background-color: transparent;
   border: none;
-  cursor: url("../img/cursor-hand.png"), pointer;
+  cursor: pointer;
 }
 
 .pagination-button-left {
@@ -2513,7 +2516,7 @@
 }
 
 .pagination-list__item-link:hover {
-  cursor: url("../img/cursor-hand.png"), pointer;
+  cursor: pointer;
   background-color: var(--lower-background-color);
 }
 

@@ -9,6 +9,16 @@ try {
   isStorageSupport = false;
 }
 
+// Отмена действия пустых ссылок
+
+const emptyLinks = document.querySelectorAll(".no-transition");
+
+for (let e = 1; e < emptyLinks.length; e++) {
+  emptyLinks[e].addEventListener("click", function(evt) {
+    evt.preventDefault();
+  });
+}
+
 // Проверка форм на пустые поля
 
 signinSubmit.addEventListener("click", function (evt) {

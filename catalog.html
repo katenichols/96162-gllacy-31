@@ -7,15 +7,11 @@
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="favicon/icon180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-    />
     <link href="normalize.css" rel="stylesheet" />
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
-  <body class="page-body">
+  <body class="page-body catalog-body">
     <header class="main-header">
       <div class="container main-header-container-catalog">
         <div class="main-header__main-nav-wrapper">
@@ -38,7 +34,7 @@
                 <div class="site-nav-wrapper">
                   <ul class="site-nav__list">
                     <li class="site-nav__list-item site-nav__list-item-special">
-                      <a class="site-nav__list-item-link" href="">Новинки</a>
+                      <a class="site-nav__list-item-link no-transition" href="#">Новинки</a>
                     </li>
                     <li class="site-nav__link-item-separator"></li>
                     <li class="site-nav__list-item">
@@ -47,18 +43,17 @@
                       >
                     </li>
                     <li class="site-nav__list-item">
-                      <a class="site-nav__list-item-link" href="">Щербеты</a>
+                      <a class="site-nav__list-item-link no-transition" href="#">Щербеты</a>
                     </li>
                     <li class="site-nav__list-item">
-                      <a class="site-nav__list-item-link" href=""
+                      <a class="site-nav__list-item-link no-transition" href="#"
                         >Фруктовый лед</a
                       >
                     </li>
                     <li class="site-nav__list-item">
                       <a
-                        class="site-nav__list-item-link"
-                        href="blank.html"
-                        target="_blank"
+                        class="site-nav__list-item-link no-transition"
+                        href="#"
                         >Мелорин</a
                       >
                     </li>
@@ -66,12 +61,12 @@
                 </div>
               </li>
               <li class="main-nav__list-item nav-item">
-                <a class="nav-item__link" href=""
+                <a class="nav-item__link no-transition" href="#"
                   ><span class="nav-item__link-text">Доставка и оплата</span></a
                 >
               </li>
               <li class="main-nav__list-item nav-item">
-                <a class="nav-item__link" href=""
+                <a class="nav-item__link no-transition" href="#"
                   ><span class="nav-item__link-text">О компании</span></a
                 >
               </li>
@@ -80,7 +75,7 @@
         </div>
         <div class="main-header__user-nav-wrapper">
           <div class="search-wrapper">
-            <a class="main-header__link main-header__link-search" href="">
+            <a class="main-header__link main-header__link-search" href="#">
               <span class="visually-hidden" aria-label="Поиск по сайту"
                 >Поиск</span
               >
@@ -105,7 +100,7 @@
           <div class="signin-wrapper">
             <a
               class="main-header__link main-header__link-login"
-              href=""
+              href="#"
               aria-label="Авторизация на сайте"
               >Вход</a
             >
@@ -136,19 +131,17 @@
                   />
                 </p>
                 <div class="signin-form-wrapper">
-                  <button class="signin-form__button button-link" type="submit">
-                    Войти
-                  </button>
+                  <a class="signin-form__button button-link no-transition" href=#>Войти</a>
                   <div class="signin-form-link-wrapper">
-                    <a class="signin-form__link" href="">Забыли пароль?</a>
-                    <a class="signin-form__link" href="">Новая регистрация</a>
+                    <a class="signin-form__link no-transition" href="#">Забыли пароль?</a>
+                    <a class="signin-form__link no-transition" href="#">Новая регистрация</a>
                   </div>
                 </div>
               </form>
             </div>
           </div>
           <div class="cart-wrapper">
-            <a class="main-header__link main-header__link-full" href=""
+            <a class="main-header__link main-header__link-full" href="#"
               >2 товара</a
             >
             <section class="cart">
@@ -159,11 +152,11 @@
                 </caption>
                 <tr class="cart-table__row-first">
                   <td class="cart-table__cell cart-table__cell-delete">
-                    <button
-                      class="cart-table__button"
-                      type="button"
+                    <a
+                      class="cart-table__button no-transition"
+                      href="#"
                       aria-label="Удалить товар"
-                    ></button>
+                    ></a>
                   </td>
                   <td
                     class="
@@ -183,11 +176,11 @@
                 </tr>
                 <tr class="cart-table__row-last">
                   <td class="cart-table__cell cart-table__cell-delete">
-                    <button
-                      class="cart-table__button"
-                      type="button"
+                    <a
+                      class="cart-table__button no-transition"
+                      href="#"
                       aria-label="Удалить товар"
-                    ></button>
+                    ></a>
                   </td>
                   <td
                     class="
@@ -210,7 +203,7 @@
                 <span class="cart-result__text">Итого: </span>
                 <span class="cart-result__text cart-result__sum">750 руб.</span>
               </div>
-              <a class="cart-link button-link" href="">Оформить заказ</a>
+              <a class="cart-link button-link no-transition" href="#">Оформить заказ</a>
             </section>
           </div>
         </div>
@@ -478,7 +471,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -510,7 +503,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -542,7 +535,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -574,7 +567,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -606,7 +599,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -638,7 +631,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -670,7 +663,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -702,7 +695,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -734,7 +727,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -766,7 +759,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -798,7 +791,7 @@
               >
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -828,7 +821,7 @@
               <span class="catalog-item__text">Сливочное с мятным сиропом</span>
               <a
                 class="catalog-item__link button-link button-link--view"
-                href=""
+                href="#"
                 tabindex="-1"
                 >Быстрый просмотр</a
               >
@@ -846,19 +839,19 @@
                 >
               </li>
               <li class="pagination-list__item">
-                <a class="pagination-list__item-link" href="">2</a>
+                <a class="pagination-list__item-link no-transition" href="#">2</a>
               </li>
               <li class="pagination-list__item">
-                <a class="pagination-list__item-link" href="">3</a>
+                <a class="pagination-list__item-link no-transition" href="#">3</a>
               </li>
               <li class="pagination-list__item">
-                <a class="pagination-list__item-link" href="">4</a>
+                <a class="pagination-list__item-link no-transition" href="#">4</a>
               </li>
               <li class="pagination-list__item">
-                <a class="pagination-list__item-link" href="">5</a>
+                <a class="pagination-list__item-link no-transition" href="#">5</a>
               </li>
             </ul>
-            <a class="pagination-button pagination-button-right" href=""></a>
+            <a class="pagination-button pagination-button-right no-transition" href="#"></a>
           </div>
         </section>
       </div>
@@ -992,18 +985,18 @@
             <h2 class="visually-hidden">Меню</h2>
             <ul class="footer-nav__list">
               <li class="footer-nav__list-item footer-list">
-                <a class="footer-list__link footer-list__link-current" href=""
+                <a class="footer-list__link footer-list__link-current no-transition" href="#"
                   >Для поставщиков</a
                 >
               </li>
               <li class="footer-nav__list-item footer-list">
-                <a class="footer-list__link" href="">Наши документы</a>
+                <a class="footer-list__link no-transition" href="#">Наши документы</a>
               </li>
               <li class="footer-nav__list-item footer-list">
-                <a class="footer-list__link" href="">О производстве</a>
+                <a class="footer-list__link no-transition" href="#">О производстве</a>
               </li>
               <li class="footer-nav__list-item footer-list">
-                <a class="footer-list__link" href=""
+                <a class="footer-list__link no-transition" href="#"
                   >Экологические стандарты</a
                 >
               </li>
